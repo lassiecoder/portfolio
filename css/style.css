@@ -1,0 +1,333 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+}
+
+h1 {
+  margin-top: 0;
+}
+
+.commonProperty {
+  font-family: "Muli", sans-serif;
+  color: rgb(51, 51, 51);
+  width: 70vw;
+  font-size: 1.2vw;
+  margin: 0;
+  padding: 5vh;
+}
+
+/* NAV & SECTION ======= */
+/* ========================================== */
+/* ================================================================= */
+.navBar {
+  width: 18vw;
+  height: 100vh;
+  position: fixed;
+  box-shadow: 3px 0px 7px -1px rgba(0, 0, 0, 0.75);
+}
+
+.section {
+  width: 82vw;
+  margin-left: 18vw;
+  min-height: 50vh;
+  /* background-color: rgb(241, 237, 237); */
+}
+
+/* NAVIGATION CSS============== */
+/* ========================================== */
+/* ============================================================ */
+
+.section {
+  font-size: 50px;
+  color: rgb(235, 235, 235);
+}
+
+.navItems,
+.logo {
+  color: black;
+  display: block;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: all 0.5s;
+  font-family: "Lato", sans-serif;
+}
+
+.logo {
+  padding: 6vh 0;
+  padding-left: 2vw;
+  border-bottom: 0.5px solid rgb(128, 128, 128);
+  background-color: rgb(241, 237, 237);
+}
+
+.navItems {
+  font-size: 1.2vw;
+  font-weight: 700;
+  padding: 2vh 0;
+  padding-left: 2vw;
+  letter-spacing: 0.1vw;
+  margin: 0 0 0.1vw 0;
+}
+
+.navItems:hover,
+.resumeHover:hover {
+  background-color: lightslategray;
+  color: white;
+  padding-left: 2.5vw;
+  border-left: 1vw solid rgb(51, 51, 51);
+}
+
+.navItems.active {
+  background-color: lightslategray;
+  color: white;
+  padding-left: 2.5vw;
+  border-left: 1vw solid rgb(51, 51, 51);
+}
+
+#name {
+  font-size: 2.2vw;
+  font-weight: 900;
+  color: rgb(36, 36, 36);
+}
+
+#profession,
+.position {
+  display: block;
+  margin-top: 2vh;
+  font-size: 1.1vw;
+  /* font-weight: 600; */
+  word-spacing: 0.2vw;
+  color: rgb(87, 87, 87);
+  text-transform: capitalize;
+}
+
+/* INTRO SECTION CSS============== */
+/* ========================================== */
+/* ============================================================ */
+
+.section h1 {
+  margin: 0;
+  background-color: rgb(51, 51, 51);
+  padding: 1vw;
+  font-size: 2vw;
+  color: white;
+  letter-spacing: 0.2vw;
+  font-family: "Lato", sans-serif;
+  text-align: center;
+}
+
+.myImage {
+  background-color: #fff;
+  color: rgb(77, 77, 77);
+}
+
+.parallaxContainer {
+  position: relative;
+  /* opacity: 0.70; */
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  /* fixed = parallax
+    scroll = normal */
+  background-attachment: fixed;
+}
+
+.aboutMe h2,
+.aboutMe p {
+  color: white;
+  margin: auto;
+  text-align: center;
+}
+
+.aboutMe h2 {
+  font-family: "Lato", sans-serif;
+  font-size: 3.5vw;
+  padding-top: 35vh;
+  line-height: 10vh;
+}
+
+/* .aboutMe p {
+  line-height: 4vh;
+  font-size: 1.2vw;
+  letter-spacing: 0.1vw;
+  word-spacing: 2px;
+  font-family: "Muli", sans-serif;
+} */
+
+/* ABOUT SECTION CSS============== */
+/* ========================================== */
+/* ============================================================ */
+
+.aboutSection {
+  margin: auto;
+  /* background-color: lightpink; */
+  /* color: rgb(51, 51, 51); */
+}
+
+.aboutSection p {
+  /* font-size: 1.3vw; */
+  margin: 0;
+  /* padding: 5vh; */
+  line-height: 2.5vw;
+}
+
+.aboutSection #hello::first-letter {
+  font-size: 3vw;
+}
+
+#hello a {
+  text-decoration: none;
+  color: rgb(51, 51, 51);
+  text-decoration: underline dotted;
+}
+
+#hello a:hover {
+  color: lightslategray;
+}
+
+#contactMe {
+  padding: 0.5vw;
+  background-color: rgb(193, 216, 240);
+  text-decoration: none !important;
+}
+
+#contactMe:hover {
+  color: white !important;
+  background-color: lightslategray;
+}
+
+.currentFocus {
+  margin: 0;
+  display: flex;
+  align-items: center;
+  padding: 2vw 0 0 0;
+}
+
+.currentFocus h4 {
+  margin-right: 1vw;
+}
+
+/* EXPERIENCE SECTION CSS============== */
+/* ========================================== */
+/* ============================================================ */
+
+.experienceSectoin {
+  margin: auto;
+}
+
+.experienceSectoin .box {
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+  margin: 5vh 0;
+}
+.experienceSectoin .box > div {
+  padding: 0.5vw;
+}
+
+.experienceSectoin .boxhead {
+  display: grid;
+  grid-template-columns: 0.5fr 2fr 1fr;
+  align-items: center;
+}
+
+.experienceSectoin .boxhead h3 {
+  font-size: 1.8vw;
+  /* text-decoration: none;
+  color: rgb(51, 51, 51); */
+}
+
+.experienceSectoin .boxLogo img {
+  /* width: 50%; */
+  padding-left: 3vw;
+}
+
+.experienceSectoin .boxBody {
+  line-height: 2.5vw;
+}
+
+.experienceSectoin .boxBody ul {
+  padding: 0 4vw;
+}
+
+.experienceSectoin .boxFoot {
+  background-color: rgb(241, 237, 237);
+}
+
+.boxBody p,
+.boxFoot p {
+  padding: 0 2.5vw;
+}
+
+.experienceSectoin .box1 img {
+  width: 40%;
+}
+
+.experienceSectoin .box2 img {
+  width: 50%;
+}
+
+.experienceSectoin .box3 img {
+  width: 66%;
+}
+
+.experienceSectoin .box4 img {
+  width: 30%;
+}
+
+/* SKILLS SECTION CSS============== */
+/* ========================================== */
+/* ============================================================ */
+
+.skillsSection {
+  /* background-color: yellow; */
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 10px;
+}
+
+.skillsSection .box {
+  /* background-color: aqua; */
+  text-align: center;
+  padding: 2vw 1vw;
+}
+
+.skillsSection .box img {
+  width: 50%;
+  height: 7vw;
+}
+
+.skillsSection .box h4 {
+  margin-bottom: 0;
+  font-weight: 500;
+  font-size: 1.2vw;
+}
+
+/* EDUCATION SECTION CSS============== */
+/* ========================================== */
+/* ============================================================ */
+
+.educationSection {
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 5vw;
+}
+
+.educationSection .box {
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+  margin: 0;
+}
+
+.educationSection .box .boxHead {
+  background-color: rgb(241, 237, 237);
+  padding: 1vw 2vw;
+}
+
+.educationSection .durationAndDegree {
+  margin: 0;
+  padding: 2vw;
+  line-height: 2vw;
+  color: rgb(87, 87, 87);
+}
