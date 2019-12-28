@@ -32,7 +32,7 @@ h1 {
 .section {
   width: 82vw;
   margin-left: 18vw;
-  min-height: 50vh;
+  min-height: 60vh;
   /* background-color: rgb(241, 237, 237); */
 }
 
@@ -144,8 +144,8 @@ h1 {
 .aboutMe h2 {
   font-family: "Lato", sans-serif;
   font-size: 3.5vw;
-  padding-top: 35vh;
-  line-height: 10vh;
+  padding-top: 38vh;
+  line-height: 6vw;
 }
 
 /* .aboutMe p {
@@ -313,6 +313,7 @@ h1 {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-gap: 5vw;
+  padding: 5vw 0;
 }
 
 .educationSection .box {
@@ -330,4 +331,143 @@ h1 {
   padding: 2vw;
   line-height: 2vw;
   color: rgb(87, 87, 87);
+}
+
+/* CONTACT SECTION CSS============== */
+/* ========================================== */
+/* ============================================================ */
+
+.contactSection {
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-gap: 5vw;
+  min-height: 90vh;
+}
+
+.contactSection .box {
+  margin: auto;
+  border: 0.2vw solid lightslategray;
+  border-radius: 5%;
+  text-align: center;
+}
+
+.contactSection .box i {
+  font-size: 2.5vw;
+  padding: 1.5vw;
+  color: rgb(51, 51, 51);
+}
+
+.contactSection .box:hover {
+  border: 0.2vw solid rgb(51, 51, 51);
+}
+.contactSection .box i:hover {
+  color: lightslategray;
+}
+
+/* PROJECTS SECTION CSS============== */
+/* ========================================== */
+/* ============================================================ */
+
+.projectsSection {
+  margin: auto;
+  /* background-color: aqua; */
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.projectsSection .box {
+  width: 31%;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+  /* padding: 0.1vw; */
+  margin: 1vw;
+  display: inline-block;
+  background-color: rgb(241, 237, 237);
+}
+
+.projectsSection .box img {
+  width: 100%;
+}
+
+.projectsSection .box h4 {
+  font-size: 1.5vw;
+}
+
+.projectsSection .box h4,
+.projectsSection .box p {
+  /* padding: 1vw 2vw; */
+  padding: 0 2vw 2vw 2vw;
+  margin: 0;
+}
+
+.projectsSection .box a {
+  text-decoration: none;
+  color: rgb(51, 51, 51);
+}
+
+
+
+/* MEDIA QUERIES ============== */
+/* ========================================== */
+/* ============================================================ */
+/* ==================================================== */
+/* ========================================== */
+/* ============================================================ */
+
+
+
+
+@media (max-width: 769px) {
+  .projectsSection {
+    flex-wrap: wrap;
+  }
+
+  .projectsSection .box {
+    width: 45%;
+  }
+}
+
+
+@media (max-width: 769px) {
+
+  .commonProperty {
+    font-size: 1.7vw;
+  }
+
+  /* ABOUT SECTION CSS============== */  
+    .aboutSection p {
+      line-height: 3.5vw;
+    }
+
+  /* SKILLS SECTION CSS============== */
+
+  .skillsSection {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .skillsSection .box {
+    padding: 2vw 7vw;
+  }
+  .skillsSection .box img {
+    height: 10vw;
+  }
+  .skillsSection .box h4 {
+    font-size: 1.8vw;
+  }
+
+  /* EDUCATION SECTION CSS============== */
+
+  .educationSection {
+    grid-template-columns: 1fr;
+  }
+  .educationSection .durationAndDegree {
+    line-height: 3.5vw;
+  }
+
+  /* EXPERIENCE SECTION CSS============== */
+
+  .experienceSectoin .boxBody ul li {
+    line-height: 3.5vw;
+  }
+  .boxBody p, .boxFoot p {
+    line-height: 3.5vw;
 }
