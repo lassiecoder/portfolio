@@ -30,10 +30,10 @@ h1 {
 }
 
 .section {
+  /* width: 80.8vw; */
   width: 82vw;
-  margin-left: 18vw;
+  padding-left: 18vw;
   min-height: 60vh;
-  /* background-color: rgb(241, 237, 237); */
 }
 
 /* NAVIGATION CSS============== */
@@ -180,7 +180,7 @@ h1 {
 #hello a {
   text-decoration: none;
   color: rgb(51, 51, 51);
-  text-decoration: underline dotted;
+  text-decoration: underline;
 }
 
 #hello a:hover {
@@ -257,6 +257,11 @@ h1 {
 .boxBody p,
 .boxFoot p {
   padding: 0 2.5vw;
+}
+
+hr {
+  width: 90%;
+  border: 0.05vw solid lightslategray;
 }
 
 .experienceSectoin .box1 img {
@@ -342,7 +347,11 @@ h1 {
   display: grid;
   grid-template-columns: repeat(6, 1fr);
   grid-gap: 5vw;
-  min-height: 90vh;
+  padding-top: 38vh;
+}
+
+#contact {
+  min-height: 100vh;
 }
 
 .contactSection .box {
@@ -404,8 +413,10 @@ h1 {
   text-decoration: none;
   color: rgb(51, 51, 51);
 }
-
-
+.projectsSection .box a:hover {
+  background-color: rgb(51, 51, 51);
+  color: white;
+}
 
 /* MEDIA QUERIES ============== */
 /* ========================================== */
@@ -414,10 +425,59 @@ h1 {
 /* ========================================== */
 /* ============================================================ */
 
+@media (max-width: 1370px) {
+  /* .section {
+    width: 80.7vw;
+  } */
+  .commonProperty {
+    font-size: 1.4vw;
+  }
+}
+@media (max-width: 1262px) {
+  /* .section {
+    width: 80.6vw;
+    min-height: 60vh;
+  } */
+}
+@media (max-width: 1172px) {
+  /* .section {
+    width: 80.5vw;
+  } */
+  .commonProperty {
+    font-size: 1.5vw;
+  }
+}
+@media (max-width: 1094px) {
+  /* .section {
+    width: 80.3vw;
+  } */
+  .commonProperty {
+    font-size: 1.6vw;
+  }
+}
+@media (max-width: 965px) {
+  /* .section {
+    width: 80.1vw;
+    min-height: 40vh;
+  } */
+}
+@media (max-width: 863px) {
+  /* .section {
+    width: 80vw;
+  } */
+}
+@media (max-width: 822px) {
+  /* .section {
+    width: 79.9vw;
+  } */
+}
+@media (max-width: 783px) {
+  /* .section {
+    width: 79.7vw;
+  } */
+}
 
-
-
-@media (max-width: 769px) {
+@media (max-width: 965px) {
   .projectsSection {
     flex-wrap: wrap;
   }
@@ -427,17 +487,38 @@ h1 {
   }
 }
 
+/* ----------------- MOBILE VIEW---------------- */
+/* ========================================================= */
 
 @media (max-width: 769px) {
-
-  .commonProperty {
-    font-size: 1.7vw;
+  .navBar {
+    display: none;
+  }
+  .section {
+    width: 100vw;
+    padding-left: 0;
+  }
+  .section h1 {
+    font-size: 4vw;
   }
 
-  /* ABOUT SECTION CSS============== */  
-    .aboutSection p {
-      line-height: 3.5vw;
-    }
+  .commonProperty {
+    font-size: 2.1vw;
+    word-spacing: 0.1vw;
+  }
+
+  /* ABOUT SECTION CSS============== */
+
+  .aboutSection p {
+    line-height: 3.5vw;
+  }
+  .aboutMe h2 {
+    font-size: 5.5vw;
+    line-height: 9vw;
+  }
+  .aboutSection #hello::first-letter {
+    font-size: 7vw;
+  }
 
   /* SKILLS SECTION CSS============== */
 
@@ -452,6 +533,7 @@ h1 {
   }
   .skillsSection .box h4 {
     font-size: 1.8vw;
+    font-weight: 600;
   }
 
   /* EDUCATION SECTION CSS============== */
@@ -468,6 +550,229 @@ h1 {
   .experienceSectoin .boxBody ul li {
     line-height: 3.5vw;
   }
-  .boxBody p, .boxFoot p {
+  .boxBody p,
+  .boxFoot p {
     line-height: 3.5vw;
+  }
+  .experienceSectoin .box1 img {
+    width: 50%;
+  }
+
+  .experienceSectoin .box2 img {
+    width: 56%;
+  }
+
+  .experienceSectoin .box3 img {
+    width: 80%;
+  }
+
+  .experienceSectoin .box4 img {
+    width: 38%;
+  }
+
+  .experienceSectoin .boxhead h3 {
+    font-size: 2.1vw;
+    margin-left: 4vw;
+  }
+  .experienceSectoin .boxLogo img {
+    padding-top: 1vw;
+  }
+  .experienceSectoin .boxhead {
+    grid-template-columns: 0.5fr 1.5fr 1fr;
+  }
+  .position {
+    margin-top: 0;
+    font-size: 1.4vw;
+    text-align: center;
+  }
+
+  hr {
+    border: 0.08vw solid lightslategray;
+  }
+
+  /* CONTACT SECTION CSS============== */
+
+  .contactSection {
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 5vw;
+    grid-row-gap: 8vw;
+    padding-top: 34vh;
+  }
+  .contactSection .box i {
+    font-size: 5vw;
+  }
+
+  /* PROJECTS SECTION CSS============== */
+
+  .projectsSection .box {
+    width: 90%;
+    margin: 3vw 0;
+  }
+  .projectsSection .box h4 {
+    font-size: 2.2vw;
+    text-align: center;
+    padding: 2vw;
+  }
+  .projectsSection .box h4 a {
+    /* font-size: ; */
+  }
+}
+
+@media (max-width: 684px) {
+  /* PROJECTS SECTION CSS============== */
+
+  .projectsSection .box {
+    width: 100%;
+  }
+}
+
+@media (max-width: 426px) {
+  .commonProperty {
+    font-size: 3vw;
+    width: 84vw;
+    padding: 5vh 0;
+  }
+  .section h1 {
+    font-size: 5.2vw;
+    padding: 2vw;
+  }
+
+  /* ABOUT SECTION CSS============== */
+
+  .aboutMe h2 {
+    font-size: 6vw;
+    line-height: 10vw;
+  }
+  .aboutSection p {
+    line-height: 5vw;
+  }
+
+  /* EXPERIENCE SECTION CSS============== */
+
+  .experienceSectoin .boxBody ul li {
+    line-height: 5vw;
+  }
+  .boxBody p {
+    line-height: 5vw;
+  }
+  .experienceSectoin .box > div {
+    padding: 2.5vw;
+  }
+  .experienceSectoin .boxBody ul {
+    padding: 0 8vw;
+  }
+  .experienceSectoin .boxhead h3 {
+    font-size: 3.1vw;
+  }
+  .position {
+    font-size: 2.4vw;
+  } 
+  hr {
+    border: 0.1vw solid lightslategray;
+  }
+  .experienceSectoin .box {
+    margin: 3vh 0;
+  }
+
+  /* PROJECT SECTION CSS============== */
+
+  .projectsSection .box h4 {
+    font-size: 3vw;
+    padding: 4vw;
+  }
+
+  /* PROJECT SECTION CSS============== */
+
+  .skillsSection .box {
+    padding: 7vw 10vw;
+  }
+  .skillsSection .box img {
+    width: 70%;
+    height: 14vw;
+  }
+  .skillsSection .box {
+    padding: 6vw 6vw;
+  }
+  .skillsSection .box h4 {
+    font-size: 3vw;
+  }
+
+  /* EDUCATION SECTION CSS============== */
+  .educationSection {
+    padding: 12vw 0;
+  }
+  .educationSection .box .boxHead {
+    padding: 1vw 4vw;
+  }
+  .educationSection .durationAndDegree {
+    padding: 4vw;
+  }
+  .educationSection .durationAndDegree {
+    line-height: 5vw;
+  }
+
+  /* CONTACT SECTION CSS============== */
+  .contactSection {
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 0vw;
+    grid-row-gap: 14vw;
+    padding-top: 24vh;
+  }
+  .contactSection .box {
+    border: 0.4vw solid lightslategray;
+  }
+  .contactSection .box i {
+    padding: 2.5vw;
+  }
+  .contactSection .box i {
+    font-size: 10vw;
+  }
+}
+
+@media (max-width: 376px) {
+
+  .commonProperty {
+    font-size: 3.55vw;
+  }
+
+  .aboutSection p, .experienceSectoin .boxBody ul li,  .boxBody p {
+    line-height: 7vw;
+  }
+
+  .skillsSection .box img {
+    width: 64%;
+    height: 18vw;
+  }
+
+  .projectsSection .box h4 {
+    font-size: 4vw;
+  }
+}
+
+@media (max-width: 320px) {
+  .commonProperty {
+    font-size: 4.1vw;
+  }
+
+  .experienceSectoin .box1 img {
+    width: 80%;
+  }
+
+  .experienceSectoin .box2 img {
+    width: 85%;
+  }
+
+  .experienceSectoin .box3 img {
+    width: 100%;
+  }
+
+  .experienceSectoin .box4 img {
+    width: 71%;
+  }
+  .experienceSectoin .boxhead h3 {
+    font-size: 4.1vw;
+  }
+  .position {
+    font-size: 3vw;
+  } 
 }
