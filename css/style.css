@@ -29,6 +29,10 @@ h1 {
   box-shadow: 3px 0px 7px -1px rgba(0, 0, 0, 0.75);
 }
 
+.mobileViewNavbar {
+  display: none;
+}
+
 .section {
   /* width: 80.8vw; */
   width: 82vw;
@@ -40,6 +44,8 @@ h1 {
 /* ========================================== */
 /* ============================================================ */
 
+/* DESKTOP VIEW ========== */
+/* ==================================== */
 .section {
   font-size: 50px;
   color: rgb(235, 235, 235);
@@ -102,6 +108,15 @@ h1 {
   color: rgb(87, 87, 87);
   text-transform: capitalize;
 }
+
+/* MOBILE VIEW ============== */
+/* ========================================== */
+
+
+
+
+
+
 
 /* INTRO SECTION CSS============== */
 /* ========================================== */
@@ -191,6 +206,7 @@ h1 {
   padding: 0.5vw;
   background-color: rgb(193, 216, 240);
   text-decoration: none !important;
+  transition: all 0.5s;
 }
 
 #contactMe:hover {
@@ -359,12 +375,14 @@ hr {
   border: 0.2vw solid lightslategray;
   border-radius: 5%;
   text-align: center;
+  transition: all 0.5s;
 }
 
 .contactSection .box i {
   font-size: 2.5vw;
   padding: 1.5vw;
   color: rgb(51, 51, 51);
+  transition: all 0.5s;
 }
 
 .contactSection .box:hover {
@@ -494,6 +512,61 @@ hr {
   .navBar {
     display: none;
   }
+  
+  .mobileViewNavmenu {
+    padding: 1vw;
+  }
+
+  .mobileViewNavbar {
+    display: block;
+    position: fixed;
+    width: 100vw;
+    background-color: rgb(241, 237, 237);
+    z-index: 1;
+    box-shadow: 0px 2px 11px -2px rgba(0,0,0,0.75);
+  }
+
+  .mobileViewNavbar a {
+    text-align: center;
+    text-decoration: none;
+  }
+  
+  .mobileViewNavmenu span {
+    display: block;
+    font-family: "Lato", sans-serif;
+  }
+  .mobileViewNavmenu #myName {
+    color: rgb(36, 36, 36);
+    font-size: 4vw;
+    font-weight: 900;
+  }
+  .mobileViewNavmenu #myProfession {
+    color: rgb(87, 87, 87);
+    font-size: 2.5vw;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   .section {
     width: 100vw;
     padding-left: 0;

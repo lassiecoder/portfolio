@@ -34,7 +34,7 @@
   </head>
   <body>
     <div class="wrapper">
-      <!-- NAVIGATION STARTS ------------------->
+      <!-- NAVIGATION STARTS (DESKTOP VIEW AFTER 768px) ------------------->
       <nav class="navBar">
         <div id="navMenu">
           <a href="#intro" class="logo">
@@ -57,6 +57,29 @@
         </div>
       </nav>
       <!-- NAVIGATION ENDS --------------------->
+
+      <!-- NAVIGATION STARTS (DESKTOP VIEW BEFORE 768px) ------------------->
+      <nav class="mobileViewNavbar">
+
+        <div class="hiddenBar">
+          <a href="#about">about</a>
+          <a href="#experience">experience</a>
+          <a href="#projects">projects</a>
+          <a href="#skills">skills</a>
+          <a href="#education">education</a>
+          <a href="#contact">contact</a>
+        </div>
+
+        <div class="mobileViewNavmenu">
+          <a href="#intro" class="mobileViewLogo">
+            <span id="myName"> Priyanka Sharma </span>
+            <span id="myProfession"> Front-end Developer </span>
+          </a>
+          
+        </div>
+
+      </nav>
+      <!-- NAVIGATION ENDS  ------------------->
 
       <!-- SECTION STARTS ------------------------------------------>
 
@@ -366,32 +389,32 @@
         <h1>CONTACT</h1>
         <div class="commonProperty contactSection">
           <div class="box box1">
-            <a href="https://twitter.com/lassiecoder">
+            <a href="https://twitter.com/lassiecoder" target="_blank">
               <i class="fab fa-twitter"></i>
             </a>
           </div>
           <div class="box box2">
-            <a href="https://www.instagram.com/lassiecoder/">
+            <a href="https://www.instagram.com/lassiecoder/" target="_blank">
             <i class="fab fa-instagram"></i>
           </a>
           </div>
           <div class="box box3">
-            <a href="https://www.linkedin.com/in/priyanka-sharma-b79401142/">
+            <a href="https://www.linkedin.com/in/priyanka-sharma-b79401142/" target="_blank">
             <i class="fab fa-linkedin-in"></i>
           </a>
           </div>
           <div class="box box4">
-            <a href="mailto:sharmapriyanka84510@gmail.com">
+            <a href="mailto:sharmapriyanka84510@gmail.com" target="_blank">
             <i class="fas fa-envelope"></i>
           </a>
           </div>
           <div class="box box5">
-            <a href="https://github.com/lassiecoder">
+            <a href="https://github.com/lassiecoder" target="_blank">
             <i class="fab fa-github-alt"></i>
           </a>
           </div>
           <div class="box box6">
-            <a href="https://codepen.io/lassiecoder/">
+            <a href="https://codepen.io/lassiecoder/" target="_blank">
               <i class="fab fa-codepen"></i>
           </a>
           </div>
@@ -404,6 +427,13 @@
 
     <!-- JS LINKS -->
     <script src="js/script.js"></script>
+    <script src="js/jQuery.js"></script>
     <script src="js/simple-scrollspy.min.js"></script>
+
+    <script>
+        // FOR NAVIGATION VIEW BEFORE 768px 
+
+    </script>
+
   </body>
 </html>
