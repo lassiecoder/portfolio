@@ -34,6 +34,7 @@
   </head>
   <body>
     <div class="wrapper">
+
       <!-- NAVIGATION STARTS (DESKTOP VIEW AFTER 768px) ------------------->
       <nav class="navBar">
         <div id="navMenu">
@@ -59,27 +60,47 @@
       <!-- NAVIGATION ENDS --------------------->
 
       <!-- NAVIGATION STARTS (DESKTOP VIEW BEFORE 768px) ------------------->
-      <nav class="mobileViewNavbar">
+      <nav class="topHeading">
 
-        <div class="hiddenBar">
-          <a href="#about">about</a>
-          <a href="#experience">experience</a>
-          <a href="#projects">projects</a>
-          <a href="#skills">skills</a>
-          <a href="#education">education</a>
-          <a href="#contact">contact</a>
-        </div>
+        <div class="mobileViewNavbar">
 
-        <div class="mobileViewNavmenu">
-          <a href="#intro" class="mobileViewLogo">
-            <span id="myName"> Priyanka Sharma </span>
-            <span id="myProfession"> Front-end Developer </span>
-          </a>
-          
+          <div id="toggleOpen"> &#9776; </div>
+  
+          <div class="mobileViewNavmenu">
+            <a href="#intro" class="mobileViewLogo">
+              <span id="myName"> Priyanka Sharma </span>
+              <span id="myProfession"> Front-end Developer </span>
+            </a>
+            
+          </div>
         </div>
 
       </nav>
       <!-- NAVIGATION ENDS  ------------------->
+
+      <!-- HIDDEN NAVIGATION ITEMS STARTS -->
+
+      <nav class="hiddenMenu" id="showHide">
+        <div id="toggleClose"> &#10005; </div>
+        <div id="navMenu hiddenItems">
+          <a href="#about" class="navItems about" id="navItems"> about </a>
+          <a href="#experience" class="navItems experience" id="navItems"> experience </a>
+          <a href="#projects" class="navItems projects" id="navItems"> projects </a>
+          <a href="#skills" class="navItems skills" id="navItems"> skills </a>
+          <a href="#education" class="navItems education" id="navItems"> education </a>
+          <a href="#contact" class="navItems contact" id="navItems"> contact </a>
+          <a
+            href="https://drive.google.com/file/d/12gLPJuBkOfsKONT7UhM579LFegraZ67/view"
+            target="_blank"
+            class="navItems resumeHover" id="navItems"
+          >
+            resume
+          </a>
+        </div>
+
+      </nav>
+
+      <!-- HIDDEN NAVIGATION ITEMS ENDS -->
 
       <!-- SECTION STARTS ------------------------------------------>
 
@@ -429,11 +450,6 @@
     <script src="js/script.js"></script>
     <script src="js/jQuery.js"></script>
     <script src="js/simple-scrollspy.min.js"></script>
-
-    <script>
-        // FOR NAVIGATION VIEW BEFORE 768px 
-
-    </script>
 
   </body>
 </html>

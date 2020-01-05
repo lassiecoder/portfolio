@@ -23,13 +23,15 @@ h1 {
 /* ========================================== */
 /* ================================================================= */
 .navBar {
+  display: block;
   width: 18vw;
   height: 100vh;
   position: fixed;
   box-shadow: 3px 0px 7px -1px rgba(0, 0, 0, 0.75);
 }
 
-.mobileViewNavbar {
+.mobileViewNavbar,
+.hiddenMenu {
   display: none;
 }
 
@@ -108,15 +110,6 @@ h1 {
   color: rgb(87, 87, 87);
   text-transform: capitalize;
 }
-
-/* MOBILE VIEW ============== */
-/* ========================================== */
-
-
-
-
-
-
 
 /* INTRO SECTION CSS============== */
 /* ========================================== */
@@ -509,64 +502,6 @@ hr {
 /* ========================================================= */
 
 @media (max-width: 769px) {
-  .navBar {
-    display: none;
-  }
-  
-  .mobileViewNavmenu {
-    padding: 1vw;
-  }
-
-  .mobileViewNavbar {
-    display: block;
-    position: fixed;
-    width: 100vw;
-    background-color: rgb(241, 237, 237);
-    z-index: 1;
-    box-shadow: 0px 2px 11px -2px rgba(0,0,0,0.75);
-  }
-
-  .mobileViewNavbar a {
-    text-align: center;
-    text-decoration: none;
-  }
-  
-  .mobileViewNavmenu span {
-    display: block;
-    font-family: "Lato", sans-serif;
-  }
-  .mobileViewNavmenu #myName {
-    color: rgb(36, 36, 36);
-    font-size: 4vw;
-    font-weight: 900;
-  }
-  .mobileViewNavmenu #myProfession {
-    color: rgb(87, 87, 87);
-    font-size: 2.5vw;
-  }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
   .section {
     width: 100vw;
     padding-left: 0;
@@ -686,9 +621,9 @@ hr {
     text-align: center;
     padding: 2vw;
   }
-  .projectsSection .box h4 a {
-    /* font-size: ; */
-  }
+  /* .projectsSection .box h4 a {
+    font-size: ;
+  } */
 }
 
 @media (max-width: 684px) {
@@ -739,7 +674,7 @@ hr {
   }
   .position {
     font-size: 2.4vw;
-  } 
+  }
   hr {
     border: 0.1vw solid lightslategray;
   }
@@ -803,12 +738,13 @@ hr {
 }
 
 @media (max-width: 376px) {
-
   .commonProperty {
     font-size: 3.55vw;
   }
 
-  .aboutSection p, .experienceSectoin .boxBody ul li,  .boxBody p {
+  .aboutSection p,
+  .experienceSectoin .boxBody ul li,
+  .boxBody p {
     line-height: 7vw;
   }
 
@@ -847,5 +783,122 @@ hr {
   }
   .position {
     font-size: 3vw;
-  } 
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 769px) {
+  .navBar {
+    display: none;
+  }
+
+  .topHeading {
+    position: fixed;
+    width: 100vw;
+    background-color: rgb(241, 237, 237);
+    box-shadow: 0px 2px 11px -2px rgba(0, 0, 0, 0.75);
+    z-index: 1;
+  }
+
+  .mobileViewNavbar {
+    display: grid;
+    /* grid-template-columns: 6% 90%; */
+    grid-template-columns: 28% 46%;
+  }
+
+  .mobileViewNavbar a {
+    text-align: center;
+    text-decoration: none;
+  }
+
+  .mobileViewNavmenu {
+    padding: 1vw;
+  }
+
+  .mobileViewNavmenu span {
+    display: block;
+    font-family: "Lato", sans-serif;
+  }
+  .mobileViewNavmenu #myName {
+    color: rgb(36, 36, 36);
+    font-size: 4vw;
+    font-weight: 900;
+  }
+  .mobileViewNavmenu #myProfession {
+    color: rgb(87, 87, 87);
+    font-size: 2.5vw;
+  }
+  .mobileViewNavbar #toggleOpen {
+    font-size: 4vw;
+    /* padding: 2vw 3vw; */
+    padding: 2vw 7vw;
+    cursor: pointer;
+  }
+  .hiddenMenu {
+    width: 20vw;
+    z-index: 1;
+    position: fixed;
+    height: 100vh;
+    background-color: rgb(241, 237, 237);
+  }
+  #showHide {
+    display: none;
+  }
+  .hiddenMenu #toggleClose {
+    text-align: end;
+    padding: 3vw;
+    font-size: 3vw;
+    cursor: pointer;
+  }
+  .hiddenMenu #navItems {
+    font-size: 1.8vw;
+    font-weight: 700;
+    padding: 3.2vw;
+    padding-left: 4vw;
+    letter-spacing: 0.1vw;
+    margin: 0 0 0.1vw 0;
+  }
+}
+
+@media (max-width: 426px) {
+  .topHeading {
+    padding: 2vw 0;
+  }
+  .mobileViewNavbar {
+    grid-template-columns: 15% 70%;
+  }
+  .mobileViewNavbar #toggleOpen {
+    font-size: 5vw;
+    padding: 1vw 8vw;
+  }
+  .hiddenMenu {
+    width: 25vw;
+  }
+  .hiddenMenu #toggleClose {
+    font-size: 6vw;
+    font-weight: 500;
+  }
+  .hiddenMenu #navItems {
+    font-size: 2.3vw;
+  }
 }
