@@ -24,19 +24,9 @@ let toggleopen = document.getElementById("toggleOpen");
 
 let toggleclose = document.getElementById("toggleClose");
 
-let navitems = document.querySelectorAll(".about, .experience");
-
-let section = document.getElementsByTagName("section");
-console.log(section);
-
 toggleopen.onclick = function() {
   hiddenmenu.style.display = "block";
-  section.style.filter = "blur(5px)"
 };
 toggleclose.onclick = function() {
-  hiddenmenu.style.display = "none";
-};
-
-navitems.onclick = function() {
   hiddenmenu.style.display = "none";
 };

@@ -786,27 +786,6 @@ hr {
   }
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 @media (max-width: 769px) {
   .navBar {
     display: none;
@@ -900,5 +879,37 @@ hr {
   }
   .hiddenMenu #navItems {
     font-size: 2.3vw;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 321px) {
+  .hiddenMenu #toggleClose {
+    padding: 4vw;
+    font-size: 4vw;
+  }
+  .hiddenMenu #navItems {
+    padding-left: 2vw;
+    font-size: 3vw;
+  }
+  .mobileViewNavmenu #myName {
+    font-size: 5vw;
+  }
+  .mobileViewNavmenu #myProfession {
+    font-size: 3.5vw;
+  }
+  .mobileViewNavbar #toggleOpen {
+    padding: 2vw 8vw;
+  }
+  .hiddenMenu #toggleClose {
+    padding: 5.6vw;
   }
 }
