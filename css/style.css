@@ -502,6 +502,11 @@ hr {
 /* ========================================================= */
 
 @media (max-width: 769px) {
+
+  .scrollspy h1 {
+    top: -100px !important;
+  }
+
   .section {
     width: 100vw;
     padding-left: 0;

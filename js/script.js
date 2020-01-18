@@ -17,6 +17,7 @@ $(".imgGallary").slick({
   autoplaySpeed: 1000
 });
 
+// MOBILE VIEW NAVBAR
 let hiddenmenu = document.getElementById("showHide");
 console.log(hiddenmenu);
 
@@ -30,3 +31,7 @@ toggleopen.onclick = function() {
 toggleclose.onclick = function() {
   hiddenmenu.style.display = "none";
 };
+
+function scrollWin() {
+  window.scrollBy(0, -52);
+}
