@@ -703,9 +703,9 @@ hr {
     width: 70%;
     height: 14vw;
   }
-  .skillsSection .box {
+  /* .skillsSection .box {
     padding: 6vw 6vw;
-  }
+  } */
   .skillsSection .box h4 {
     font-size: 3vw;
   }

@@ -25,6 +25,8 @@ let toggleopen = document.getElementById("toggleOpen");
 
 let toggleclose = document.getElementById("toggleClose");
 
+let navitems = document.getElementById("navItems");
+
 toggleopen.onclick = function() {
   hiddenmenu.style.display = "block";
 };
@@ -32,6 +34,10 @@ toggleclose.onclick = function() {
   hiddenmenu.style.display = "none";
 };
 
-function scrollWin() {
-  window.scrollBy(0, -52);
-}
+navitems.onclick = function() {
+  intro.style.filter = "blur(0px)";
+};
+
+// function scrollWin() {
+//   window.scrollBy(0, -55);
+// }
