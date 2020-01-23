@@ -28,6 +28,7 @@ h1 {
   height: 100vh;
   position: fixed;
   box-shadow: 3px 0px 7px -1px rgba(0, 0, 0, 0.75);
+  background-color: white;
 }
 
 .mobileViewNavbar,
@@ -757,6 +758,10 @@ hr {
     width: 64%;
     height: 18vw;
   }
+
+  .skillsSection .box {
+    padding: 7vw 6vw;
+}
 
   .projectsSection .box h4 {
     font-size: 4vw;
