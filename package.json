@@ -1,11 +1,11 @@
 {
-	"name": "reactfolio",
+	"name": "lassiecoder portfolio",
 	"version": "1.1.0",
 	"description": "Personal portfolio template built using Reactjs",
 	"author": {
-		"name": "Tharindu N. Madhusanka",
-		"email": "mail@tharindu.dev",
-		"url": "https://tharindu.dev"
+		"name": "Priyanka Sharma",
+		"email": "sharmapriyanka84510@gmail.com",
+		"url": ""
 	},
 	"license": "MIT",
 	"private": true,
