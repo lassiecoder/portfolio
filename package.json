@@ -1,6 +1,6 @@
 {
 	"name": "portfolio",
-	"version": "2.0.4",
+	"version": "2.0.5",
 	"description": "Personal portfolio template built using Reactjs",
 	"homepage": "https://lassiecoder.github.io/portfolio",
 	"author": {
@@ -31,7 +31,7 @@
 	"scripts": {
 		"start": "react-scripts start",
 		"predeploy": "npm run build",
-		"deploy": "gh-pages -d build",
+		"deploy": "gh-pages -b master -d build",
 		"build": "react-scripts build",
 		"test": "react-scripts test",
 		"eject": "react-scripts eject"
