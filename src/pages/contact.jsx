@@ -12,7 +12,7 @@ import INFO from "../data/user";
 import SEO from "../data/seo";
 
 import "./styles/contact.css";
-import ContactForm from "../components/form/form";
+// import ContactForm from "../components/form/form";
 
 const Contact = () => {
 	useEffect(() => {
