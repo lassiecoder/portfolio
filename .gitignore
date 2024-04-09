@@ -6,6 +6,7 @@
 .pnp.js
 .yarn/install-state.gz
 firebase-cred.js
+.env
 
 # testing
 /coverage

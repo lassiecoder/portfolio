@@ -9,8 +9,6 @@ import ContactForm from "./pages/contact";
 
 import ReactGA from "react-ga4";
 import { useEffect } from "react";
-// import { TracingBeam } from "@/components/ui/tracing-beam";
-import {T_ID} from "@/app/firebase-cred"
 
 
 export default function Home() {
@@ -18,8 +16,7 @@ export default function Home() {
 
   useEffect(() => {
 		// if (T_ID !== '') {
-			ReactGA.initialize(T_ID);
-      console.log({T_ID})
+			ReactGA.initialize("G-PYQ50G2GWN");
 		// }
 	}, []);
 
