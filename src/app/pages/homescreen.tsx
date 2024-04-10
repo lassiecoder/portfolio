@@ -14,7 +14,7 @@ export default function HomeScreen() {
         <h1 className="md:text-6xl text-2xl lg:text-6xl font-bold text-center text-white relative z-20 mt-30">
         <div className="flex header-container">
           <div className="mr-4 title-box">
-            <p className="text">Hi! I'm </p>
+            <p className="text">Hi! I&apos;m </p>
           </div>
           <div className="subtitle-box">
             <p className="text">

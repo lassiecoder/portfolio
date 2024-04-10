@@ -14,7 +14,7 @@ const ContactForm = () => {
               {/* Ways to Connect with Me */}
               <div className="flex header-container">
           <div className="mr-4 title-box">
-            <p className="text">I'm open to </p>
+            <p className="text">I&apos;m open to </p>
           </div>
           <div className="subtitle-box">
             <p className="text">
