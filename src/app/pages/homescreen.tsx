@@ -1,8 +1,7 @@
 import Footer from "@/components/footer";
 import Navbar from "@/components/navbar";
 import { SparklesCore } from "@/components/ui/sparkles";
-
-
+import Typewriter from 'typewriter-effect';
 
 
 export default function HomeScreen() {
@@ -12,11 +11,27 @@ export default function HomeScreen() {
    <Footer />
 
       <div className="h-screen w-full bg-black flex flex-col items-center justify-center overflow-hidden rounded-md">
-        <h1 className="md:text-6xl text-2xl lg:text-7xl font-bold text-center text-white relative z-20 mt-30">
-          Software Developer
+        <h1 className="md:text-6xl text-2xl lg:text-6xl font-bold text-center text-white relative z-20 mt-30">
+        <div className="flex header-container">
+          <div className="mr-4 title-box">
+            <p className="text">Hi! I'm </p>
+          </div>
+          <div className="subtitle-box">
+            <p className="text">
+              <Typewriter
+                options={{
+                  strings: ['lassiecoder', 'Priyanka Sharma'],
+                  autoStart: true,
+                  loop: true,
+                }}
+              />
+            </p>
+          </div>
+        </div>
+
         </h1>
         <h3 className="md:text-xl text-sm lg:text-xl font-extralight text-center relative z-20 text-gray-400 mt-10 max-w-7xl mb-2 lg:mb-4 pl-4 pr-4">
-          I’m a Software Developer, skilled at crafting both mobile and web solutions. <br />
+          Software Developer, skilled at crafting both mobile and web solutions. <br />
           I thrive on challenges, love learning new skills, and aim to write clean, professional code. <br />
           I constantly seek opportunities to grow as a developer.
         </h3>
