@@ -8,7 +8,7 @@ export const PinContainer = ({
   title,
   href,
   className,
-  containerClassName,
+  containerClassName
 }: {
   children: React.ReactNode;
   title?: string;
@@ -39,13 +39,13 @@ export const PinContainer = ({
       <div
         style={{
           perspective: "1000px",
-          transform: "rotateX(70deg) translateZ(0deg)",
+          transform: "rotateX(70deg) translateZ(0deg)"
         }}
         className="absolute left-1/2 top-1/2 ml-[0.09375rem] mt-4 -translate-x-1/2 -translate-y-1/2"
       >
         <div
           style={{
-            transform: transform,
+            transform: transform
           }}
           className="absolute left-1/2 p-4 top-1/2  flex justify-start items-start  rounded-2xl  shadow-[0_8px_16px_rgb(0_0_0/0.4)] bg-black border border-white/[0.2] group-hover/pin:border-white/[0.2] transition duration-700 overflow-hidden"
         >
@@ -59,7 +59,7 @@ export const PinContainer = ({
 
 export const PinPerspective = ({
   title,
-  href,
+  href
 }: {
   title?: string;
   href?: string;
@@ -84,7 +84,7 @@ export const PinPerspective = ({
         <div
           style={{
             perspective: "1000px",
-            transform: "rotateX(70deg) translateZ(0)",
+            transform: "rotateX(70deg) translateZ(0)"
           }}
           className="absolute left-1/2 top-1/2 ml-[0.09375rem] mt-4 -translate-x-1/2 -translate-y-1/2"
         >
@@ -94,18 +94,18 @@ export const PinPerspective = ({
                 opacity: 0,
                 scale: 0,
                 x: "-50%",
-                y: "-50%",
+                y: "-50%"
               }}
               animate={{
                 opacity: [0, 1, 0.5, 0],
                 scale: 1,
 
-                z: 0,
+                z: 0
               }}
               transition={{
                 duration: 6,
                 repeat: Infinity,
-                delay: 0,
+                delay: 0
               }}
               className="absolute left-1/2 top-1/2  h-[11.25rem] w-[11.25rem] rounded-[50%] bg-sky-500/[0.08] shadow-[0_8px_16px_rgb(0_0_0/0.4)]"
             ></motion.div>
@@ -114,18 +114,18 @@ export const PinPerspective = ({
                 opacity: 0,
                 scale: 0,
                 x: "-50%",
-                y: "-50%",
+                y: "-50%"
               }}
               animate={{
                 opacity: [0, 1, 0.5, 0],
                 scale: 1,
 
-                z: 0,
+                z: 0
               }}
               transition={{
                 duration: 6,
                 repeat: Infinity,
-                delay: 2,
+                delay: 2
               }}
               className="absolute left-1/2 top-1/2  h-[11.25rem] w-[11.25rem] rounded-[50%] bg-sky-500/[0.08] shadow-[0_8px_16px_rgb(0_0_0/0.4)]"
             ></motion.div>
@@ -134,18 +134,18 @@ export const PinPerspective = ({
                 opacity: 0,
                 scale: 0,
                 x: "-50%",
-                y: "-50%",
+                y: "-50%"
               }}
               animate={{
                 opacity: [0, 1, 0.5, 0],
                 scale: 1,
 
-                z: 0,
+                z: 0
               }}
               transition={{
                 duration: 6,
                 repeat: Infinity,
-                delay: 4,
+                delay: 4
               }}
               className="absolute left-1/2 top-1/2  h-[11.25rem] w-[11.25rem] rounded-[50%] bg-sky-500/[0.08] shadow-[0_8px_16px_rgb(0_0_0/0.4)]"
             ></motion.div>
