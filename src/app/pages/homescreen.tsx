@@ -15,7 +15,7 @@ import { FlipWords } from "@/components/ui/flip-words";
 export default function HomeScreen() {
   const words = ["Hi! I'm Priyanka Sharma"];
   return (
-    <div className="h-screen">
+    <div className="h-screen ">
       {/* home screen */}
       <Footer />
       <div className="h-screen w-full bg-black flex flex-col items-center justify-center overflow-hidden rounded-md">
@@ -24,12 +24,12 @@ export default function HomeScreen() {
             {/* <div className="mr-2 title-box">
               <p className="text">Hi! I&apos;m </p>
             </div> */}
-            <div className="subtitle-box">
+            <div className="subtitle-box ">
               <FlipWords duration={3000} words={words} />
             </div>
           </div>
         </h1>
-        <h3 className="md:text-xl text-sm lg:text-xl font-extralight text-center relative z-20 text-gray-400 mt-10 max-w-7xl mb-2 lg:mb-4 pl-4 pr-4">
+        <h3 className="md:text-xl text-sm lg:text-xl font-medium text-center relative z-20 text-gray-400 mt-10 max-w-7xl mb-2 lg:mb-4 pl-8 pr-8">
           <p className="leading-relaxed">
             A <span className="text-white font-medium">Software Developer</span>{" "}
             specializing in <span className="text-white">frontend</span> and{" "}

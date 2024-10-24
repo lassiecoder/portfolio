@@ -38,28 +38,6 @@ To start the development server:
 npm run dev
 ```
 
-### Production
-
-To build the project for production:
-
-```bash
-npm run build
-```
-
-To start the production server:
-
-```bash
-npm run start
-```
-
-### Deployment
-
-To deploy the project:
-
-```bash
-npm run deploy
-```
-
 ## Scripts
 
 - `dev`: Starts the development server.
@@ -99,6 +77,40 @@ npm run deploy
 - **postcss**: ^8
 - **tailwindcss**: ^3.3.0
 - **typescript**: ^5
+
+## Deployment
+
+1. Open your terminal in the project directory.
+
+2. Run the following command to build the project:
+
+   ```bash
+   npm run build
+   ```
+
+3. Stage the Changes
+
+   ```bash
+   git add .
+   ```
+
+4. Commit the changes
+
+   ```bash
+   git commit -m "COMMIT_MESSAGE"
+   ```
+
+5. Push the changes to your GitHub repository
+
+   ```bash
+   git push origin master
+   ```
+
+### NOTE: Monitor GitHub Actions
+
+1. Navigate to the Actions tab of your GitHub repository.
+2. Check for any running or completed workflows.
+3. Ensure the deployment workflow runs successfully.
 
 ## Contributing
 
