@@ -5,7 +5,7 @@ import { PinContainer } from "@/components/ui/3d-pin";
 
 export function Article() {
   return (
-    <div className="max-w-7xl mx-auto px-4 mt-32 pb-20 overflow-hidden">
+    <div className="max-w-7xl mx-auto px-4 mt-32 pb-20 overflow-hidden font-medium">
       <div className="px-4">
         <h2 className="md:text-4xl text-2xl lg:text-4xl font-bold text-left xl:pl-0 lg:mb-0 lg:pl-5 sm:mb-0 sm:pl-2">
           Articles

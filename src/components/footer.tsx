@@ -1,4 +1,4 @@
-import { FaMedium } from "react-icons/fa6";
+import { FaMedium, FaSquareXTwitter } from "react-icons/fa6";
 import {
   FaGithub,
   FaLinkedinIn,
@@ -32,7 +32,7 @@ export default function Footer() {
         target="_blank"
         rel="noopener noreferrer"
       >
-        <FaTwitter className="text-white hover:text-gray-300 transition-colors duration-200 sm:text-xl lg:text-2xl" />
+        <FaSquareXTwitter className="text-white hover:text-gray-300 transition-colors duration-200 sm:text-xl lg:text-2xl" />
       </Link>
       <Link
         href="https://medium.com/@sharmapriyanka84510"

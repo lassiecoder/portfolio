@@ -42,35 +42,32 @@ const ContactForm = () => {
           </div>
         </h2>
       </div>
-      <h3 className="md:text-xl text-sm lg:text-xl font-extralight text-left relative z-20 text-gray-400 max-w-7xl pb-8 lg:mb-4 pl-4">
+      <h3 className="md:text-xl text-sm lg:text-xl font-medium text-left relative z-20 text-gray-400 max-w-7xl pb-8 lg:mb-4 pl-4">
         <p className="pb-6">
           I appreciate your interest in connecting with me. I&apos;m excited to
-          explore{" "}
-          <span className="text-white font-medium">new opportunities</span>,{" "}
-          <span className="text-white font-medium">receive feedback</span>,{" "}
-          <span className="text-white font-medium">
-            collaborate on projects
-          </span>
-          , and broaden my network.
+          explore <span className="text-white">new opportunities</span>,{" "}
+          <span className="text-white">receive feedback</span>,{" "}
+          <span className="text-white">collaborate on projects</span>, and
+          broaden my network.
         </p>
         <p className="pb-6">
           For any specific questions or comments, please don&apos;t hesitate to
           contact me directly at
           <a
-            className=" bg-gradient-to-r from-purple-600 to-gray-400 text-transparent bg-clip-text font-medium ml-2"
+            className=" bg-gradient-to-r from-purple-600 to-gray-400 text-transparent bg-clip-text ml-2"
             href="mailto:sharmapriyanka84510@gmail.com"
             target="_blank"
           >
             lassiecoder@gmail.com
           </a>
           . I strive to respond to all messages within{" "}
-          <span className="text-white font-medium">24 hours</span>, although it
-          may take a bit longer during busy periods.{" "}
+          <span className="text-white">24 hours</span>, although it may take a
+          bit longer during busy periods.{" "}
         </p>
         If you prefer social media, you can also find me on{" "}
-        <span className="text-white font-medium">Instagram</span> at
+        <span className="text-white">Instagram</span> at
         <a
-          className="bg-gradient-to-r from-pink-500 to-gray-400 text-transparent bg-clip-text font-medium ml-2"
+          className="bg-gradient-to-r from-pink-500 to-gray-400 text-transparent bg-clip-text ml-2"
           href="https://instagram.com/lassiecoder"
           target="_blank"
         >
@@ -78,7 +75,7 @@ const ContactForm = () => {
         </a>
         .
       </h3>
-      <div className="text-sm pt-60 sm:mt-20 font-extralight text-center relative z-20 text-gray-400 max-w-7xl pb-8">
+      <div className="text-sm pt-60 sm:mt-20 font-light text-center relative z-20 text-gray-400 max-w-7xl pb-8">
         Always be caffeinated! | © Priyanka Sharma (lassiecoder)
       </div>
     </div>

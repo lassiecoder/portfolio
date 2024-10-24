@@ -8,7 +8,7 @@ import { CardBody, CardContainer, CardItem } from "@/components/ui/3d-card.tsx";
 
 const ThreeDCard = () => {
   return (
-    <div className="max-w-7xl mx-auto px-4 mt-20">
+    <div className="max-w-7xl mx-auto px-4 mt-20 ">
       <div className="px-4">
         <h2 className="md:text-4xl text-2xl lg:text-4xl font-bold text-left pb-12 xl:pl-0 lg:mb-0 sm:mb-0">
           Projects
@@ -17,7 +17,7 @@ const ThreeDCard = () => {
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 gap-8 sm:gap-3">
         {dummyData.map((item, index) => (
           <div key={index}>
-            <CardContainer className="inter-var">
+            <CardContainer className="inter-var font-medium">
               <CardBody
                 key={index}
                 className="bg-black relative group/card dark:hover:shadow-2xl dark:hover:shadow-emerald-500/[0.1] dark:bg-black dark:border-white/[0.2] border-white/[0.2] w-auto  h-auto rounded-xl p-6 border"
