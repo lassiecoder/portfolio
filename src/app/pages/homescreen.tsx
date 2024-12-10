@@ -21,9 +21,6 @@ export default function HomeScreen() {
       <div className="h-screen w-full bg-black flex flex-col items-center justify-center overflow-hidden rounded-md">
         <h1 className="md:text-6xl text-2xl lg:text-6xl font-bold text-center text-white relative z-20 mt-30">
           <div className="flex header-container">
-            {/* <div className="mr-2 title-box">
-              <p className="text">Hi! I&apos;m </p>
-            </div> */}
             <div className="subtitle-box ">
               <FlipWords duration={3000} words={words} />
             </div>
@@ -42,11 +39,6 @@ export default function HomeScreen() {
             <span className="text-white">dedicated to writing clean</span>,{" "}
             <span className="text-white">professional code</span>.
           </p>
-          {/* Software Developer, skilled at crafting both mobile and web solutions.{" "}
-          <br />
-          I thrive on challenges, love learning new skills, and aim to write
-          clean, professional code. <br />I constantly seek opportunities to
-          grow as a developer. */}
         </h3>
 
         <div className="w-full h-40 relative">
