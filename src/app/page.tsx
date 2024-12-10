@@ -10,6 +10,7 @@ import ContactForm from "./pages/contact";
 import ReactGA from "react-ga4";
 import { useEffect } from "react";
 import { Experience } from "./pages/experience";
+import Networking from "./pages/networking";
 
 export default function Home() {
   useEffect(() => {
@@ -25,6 +26,7 @@ export default function Home() {
       <Experience />
       <ThreeDCard />
       <Article />
+      <Networking />
       <ContactForm />
     </div>
   );

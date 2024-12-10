@@ -35,35 +35,50 @@ export function Article() {
 
 const pinData = [
   {
-    techstack: "/dev.to/lassiecoder/",
+    techstack: "@medium.com/lassiecoder",
+    href: "https://sharmapriyanka84510.medium.com/keeping-your-open-source-repo-happy-with-github-community-health-files-1972e3dacc27",
+    heading:
+      "Keeping Your Open Source Repo Happy with GitHub Community Health Files",
+    description:
+      "Explore essential strategies for organizing your open source repository, ensuring clarity and collaboration while avoiding chaos in the world of code maintenance."
+  },
+  {
+    techstack: "@medium.com/lassiecoder",
+    href: "https://medium.com/@sharmapriyanka84510/commit-guidelines-f41b23f0bf4a",
+    heading: "Git Commit Guidelines",
+    description:
+      "A comprehensive guide to crafting clear and meaningful Git commit messages, enhancing collaboration, maintainability, and understanding throughout the development process for future contributors."
+  },
+  {
+    techstack: "@dev.to/lassiecoder/",
     href: "https://dev.to/lassiecoder/git-common-developer-pitfalls-and-solutions-5aim",
     heading: "Git <> Common Developer Pitfalls and Solutions",
     description:
       "This article tackles typical Git challenges and offers actionable remedies to enhance version control and teamwork, empowering developers to optimize their workflows and collaboration processes."
   },
   {
-    techstack: "/medium.com/lassiecoder",
+    techstack: "@medium.com/lassiecoder",
     href: "https://sharmapriyanka84510.medium.com/navigating-the-upgrade-odyssey-a-journey-through-react-native-project-upgrades-and-helpful-tools-1b4384dc7f6d",
     heading: "Navigating React Native Project Upgrades: A Journey & Tools.",
     description:
       "Upgrade React Native projects effortlessly using tools like Renovate, React Native CLI, npm-check-updates, Dependabot, and react-native-template-upgrade."
   },
   {
-    techstack: "/medium.com/lassiecoder",
+    techstack: "@medium.com/lassiecoder",
     href: "https://medium.com/nerd-for-tech/fastlane-with-react-native-part-2-a1adea3321aa",
     heading: "Fastlane with React Native — Part-2",
     description:
       "Discover Fastlane's efficiency in Android app deployment, transitioning from manual to automated processes, enhancing workflow with its robust automation features."
   },
   {
-    techstack: "/medium.com/lassiecoder",
+    techstack: "@medium.com/lassiecoder",
     href: "https://sharmapriyanka84510.medium.com/fastlane-with-react-native-part-1-ac916d99cb83",
     heading: "Fastlane with React Native — Part-1",
     description:
       "Fastlane optimizes iOS app development, automating build increments and metadata uploads, enhancing deployment efficiency with streamlined processes."
   },
   {
-    techstack: "/medium.com/lassiecoder",
+    techstack: "@medium.com/lassiecoder",
     href: "https://medium.com/swlh/javascript-array-mutability-immutability-93d366c90751",
     heading: "JavaScript: Array, mutability & immutability",
     description:

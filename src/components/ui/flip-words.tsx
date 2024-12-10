@@ -48,14 +48,14 @@ export const FlipWords = ({
           stiffness: 100,
           damping: 10
         }}
-        // exit={{
-        //   opacity: 0,
-        //   y: -40,
-        //   x: 40,
-        //   filter: "blur(8px)",
-        //   scale: 2,
-        //   position: "absolute"
-        // }}
+        exit={{
+          opacity: 0,
+          y: -40,
+          x: 40,
+          filter: "blur(8px)",
+          scale: 2,
+          position: "absolute"
+        }}
         className={cn(
           "z-10 inline-block relative text-left text-white dark:text-neutral-100 px-2",
           className

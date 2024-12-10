@@ -71,6 +71,14 @@ export default ThreeDCard;
 
 const dummyData = [
   {
+    title: "Community Health Files",
+    description:
+      "The community-health-files package automates the setup and management  for open-source projects, providing a streamlined way to maintain project guidelines and policies.",
+    image:
+      "https://github.com/user-attachments/assets/cc1e0729-4de9-4014-8ef2-be3f47844d91",
+    link: "https://github.com/lassiecoder/community-health-files"
+  },
+  {
     title: "EduFund - Mutual Funds & SIP",
     description:
       "EduFund, India's leading investment app, helps parents save for their children's education, ensuring a brighter future amid rising education expenses.",
@@ -87,7 +95,7 @@ const dummyData = [
     link: "https://github.com/lassiecoder/E-CommerceWebsite"
   },
   {
-    title: "Torum: Your Crypto Social App",
+    title: "Torum: Cryptocurrency Social App",
     description:
       "Torum's mobile app fosters a vibrant SocialFi ecosystem, connecting over 230,000 cryptocurrency enthusiasts since its 2018 inception.",
     image:
