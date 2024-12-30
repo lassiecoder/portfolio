@@ -1,6 +1,9 @@
 "use client";
 
+import Tooltip from "@/components/Tooltip";
+import Link from "next/link";
 import React from "react";
+import { HiMiniBellAlert } from "react-icons/hi2";
 
 const About = () => {
   return (
@@ -25,13 +28,45 @@ const About = () => {
           My technical expertise includes –{" "}
           <span className="text-white">JavaScript</span>,{" "}
           <span className="text-white">TypeScript</span>, and{" "}
-          <span className="text-white">React ecosystems</span>, along with{" "}
-          <span className="text-white">backend technologies</span>,{" "}
-          <span className="text-white">cloud deployment</span>,{" "}
-          <span className="text-white">state management</span>,{" "}
-          <span className="text-white">real-time communication</span>, and{" "}
-          <span className="text-white">UI development</span> and{" "}
-          <span className="text-white">testing</span>.
+          {/* <span className="text-white">React ecosystems</span> */}
+          <Tooltip
+            text="React ecosystems"
+            tooltipText="React Native, ReactJS, NextJS, Storybook, Expo"
+            className="text-white"
+          />
+          , along with{" "}
+          {/* <span className="text-white">backend technologies</span> */}
+          <Tooltip
+            text="backend technologies"
+            tooltipText="NodeJS, ExpressJS, MongoDB Atlas"
+            className="text-white"
+          />
+          ,{/* <span className="text-white">cloud deployment</span> */}{" "}
+          <Tooltip
+            text="cloud deployment"
+            tooltipText="AWS, Vercel, Netlify, Heroku, Fastlane"
+            className="text-white"
+          />
+          ,{/* <span className="text-white">state management</span> */}{" "}
+          <Tooltip
+            text="state management"
+            tooltipText="Redux, Rematch, React Query"
+            className="text-white"
+          />
+          ,{/* <span className="text-white">real-time communication</span> */}{" "}
+          <Tooltip
+            text="real-time communication"
+            tooltipText="Websocket"
+            className="text-white"
+          />
+          , and {/* <span className="text-white">UI development</span> */}
+          <Tooltip
+            text="UI development"
+            tooltipText="Figma, Adobe XD"
+            className="text-white"
+          />{" "}
+          and {/* <span className="text-white">testing</span> */}
+          <Tooltip text="testing" tooltipText="Jest" className="text-white" />.
         </p>
         <p className="mt-6">
           Currently, I&apos;m contributing my skills to{" "}
@@ -45,6 +80,20 @@ const About = () => {
           innovation and excellence defines every project I undertake.
         </p>
       </h3>
+      <div className="flex justify-center items-center">
+        <Link
+          href={"https://techscoop.hashnode.dev/newsletter"}
+          target="_blank"
+        >
+          <button className="relative inline-flex h-10 overflow-hidden rounded-full p-[1px] focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-slate-50">
+            <span className="absolute inset-[-1000%] animate-[spin_2s_linear_infinite] bg-[conic-gradient(from_90deg_at_50%_50%,#E2CBFF_0%,#393BB2_50%,#E2CBFF_100%)]" />
+            <span className="inline-flex h-full w-full cursor-pointer items-center justify-center rounded-full bg-slate-950 px-3 py-1 text-sm font-medium text-white backdrop-blur-3xl">
+              &nbsp; Subscribe to my newsletter &nbsp;
+              <HiMiniBellAlert className="mr-2 text-xl" />
+            </span>
+          </button>
+        </Link>
+      </div>
     </div>
   );
 };
