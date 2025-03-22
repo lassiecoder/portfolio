@@ -1,6 +1,4 @@
 import Footer from "@/components/footer";
-import { SparklesCore } from "@/components/ui/sparkles";
-import Typewriter from "typewriter-effect";
 import {
   IconBrandGithub,
   IconBrandX,
@@ -11,6 +9,7 @@ import {
 } from "@tabler/icons-react";
 import Image from "next/image";
 import { FlipWords } from "@/components/ui/flip-words";
+import { SparklesCore } from "@/components/ui/sparkles";
 
 export default function HomeScreen() {
   const words = ["Hi! I'm Priyanka Sharma"];
@@ -19,7 +18,7 @@ export default function HomeScreen() {
       {/* home screen */}
       <Footer />
       <div className="h-screen w-full bg-black flex flex-col items-center justify-center overflow-hidden rounded-md">
-        <h1 className="md:text-6xl text-2xl lg:text-6xl font-bold text-center text-white relative z-20 mt-30">
+        <h1 className="md:text-5xl text-2xl lg:text-6xl font-bold text-center text-white relative z-20 mt-30">
           <div className="flex header-container">
             <div className="subtitle-box ">
               <FlipWords duration={3000} words={words} />

@@ -14,9 +14,7 @@ import Networking from "./pages/networking";
 
 export default function Home() {
   useEffect(() => {
-    // if (T_ID !== '') {
     ReactGA.initialize("G-PYQ50G2GWN");
-    // }
   }, []);
 
   return (
