@@ -48,7 +48,10 @@ const FloatingDockMobile = ({
         {open && (
           <motion.div
             layoutId="nav"
-            className="absolute bottom-full mb-2 inset-x-0 flex flex-col gap-2"
+            {...{
+              className:
+                "absolute bottom-full mb-2 inset-x-0 flex flex-col gap-2"
+            }}
           >
             {items.map((item, idx) => (
               <motion.div
@@ -99,12 +102,16 @@ const FloatingDockDesktop = ({
   let mouseX = useMotionValue(Infinity);
   return (
     <motion.div
-      onMouseMove={(e) => mouseX.set(e.pageX)}
-      onMouseLeave={() => mouseX.set(Infinity)}
-      className={cn(
-        "mx-auto hidden md:flex h-16 gap-4 items-end  rounded-2xl bg-gray-50 dark:bg-neutral-900 px-4 pb-3",
-        className
-      )}
+      // onMouseMove={(e) => mouseX.set(e.pageX)}
+      // onMouseLeave={() => mouseX.set(Infinity)}
+      {...{
+        onMouseMove: (e: MouseEvent) => mouseX.set(e.pageX),
+        onMouseLeave: (e: MouseEvent) => mouseX.set(Infinity),
+        className: cn(
+          "mx-auto hidden md:flex h-16 gap-4 items-end rounded-2xl bg-gray-50 dark:bg-neutral-900 px-4 pb-3",
+          className
+        )
+      }}
     >
       {items.map((item) => (
         <IconContainer mouseX={mouseX} key={item.title} {...item} />
@@ -170,10 +177,13 @@ function IconContainer({
     <Link href={href}>
       <motion.div
         ref={ref}
-        style={{ width, height }}
-        onMouseEnter={() => setHovered(true)}
-        onMouseLeave={() => setHovered(false)}
-        className="aspect-square rounded-full bg-gray-200 dark:bg-neutral-800 flex items-center justify-center relative"
+        {...{
+          style: { width, height },
+          onMouseEnter: () => setHovered(true),
+          onMouseLeave: () => setHovered(false),
+          className:
+            "aspect-square rounded-full bg-gray-200 dark:bg-neutral-800 flex items-center justify-center relative"
+        }}
       >
         <AnimatePresence>
           {/* {hovered && (
@@ -189,7 +199,7 @@ function IconContainer({
         </AnimatePresence>
         <motion.div
           style={{ width: widthIcon, height: heightIcon }}
-          className="flex items-center justify-center"
+          {...{ className: "flex items-center justify-center" }}
         >
           {icon}
         </motion.div>
