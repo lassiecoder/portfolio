@@ -15,7 +15,12 @@ interface TimelineEntry {
 
 export const Timeline = ({ data }: { data: TimelineEntry[] }) => {
   const ref = useRef<HTMLDivElement>(null);
+  // const containerRef = useRef<HTMLDivElement>(null);
+  // const containerRef = useRef<HTMLDivElement>(
+  //   null!
+  // ) as React.RefObject<HTMLElement>;
   const containerRef = useRef<HTMLDivElement>(null);
+
   const [height, setHeight] = useState(0);
   const [isSmallScreen, setIsSmallScreen] = useState(false);
 
@@ -37,8 +42,12 @@ export const Timeline = ({ data }: { data: TimelineEntry[] }) => {
     }
   }, [ref]);
 
+  // const { scrollYProgress } = useScroll({
+  //   target: containerRef,
+  //   offset: ["start 10%", "end 50%"]
+  // });
   const { scrollYProgress } = useScroll({
-    target: containerRef,
+    target: containerRef as React.RefObject<HTMLElement>, // Ensure compatibility
     offset: ["start 10%", "end 50%"]
   });
 
