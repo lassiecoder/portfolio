@@ -79,7 +79,7 @@ export function Experience() {
                 contribute to the development of the{" "}
                 <span className=" text-white">Adecco India app</span>, which is
                 utilized by top companies for staffing solutions.
-                <p className="mt-2">
+                <span className="mt-2">
                   I also work on the{" "}
                   <span className=" text-white">global web app</span>, ensuring
                   it meets diverse needs across various regions. My expertise
@@ -87,7 +87,7 @@ export function Experience() {
                   <span className=" text-white">React Native</span> and{" "}
                   <span className=" text-white">React.js</span> to build
                   efficient, user-friendly applications.
-                </p>
+                </span>
               </p>
               <p className="mt-2">
                 Additionally, I have developed a{" "}

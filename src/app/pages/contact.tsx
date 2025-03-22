@@ -1,11 +1,21 @@
 "use client";
 
 import React from "react";
-import Typewriter from "typewriter-effect";
+import Link from "next/link";
+import Image from "next/image";
+import ReactGA from "react-ga4";
 import { FlipWords } from "../../components/ui/flip-words";
 
 const ContactForm = () => {
   const words = ["Networking", "Collaboration", "Suggestions"];
+
+  const trackSponsorClick = () => {
+    ReactGA.event("sponsorship_click_contact", {
+      category: "Sponsorship",
+      label: "GitHub Sponsor Button"
+    });
+  };
+
   return (
     <div className="max-w-7xl mx-auto px-4 mt-44 ">
       <div className="px-4">
@@ -53,6 +63,19 @@ const ContactForm = () => {
         </a>
         .
       </h3>
+      <Link
+        href={"https://github.com/sponsors/lassiecoder"}
+        className="inline-flex items-center ml-4 w-[100px] h-[40px]"
+        onClick={trackSponsorClick}
+      >
+        <Image
+          src="https://github.com/user-attachments/assets/0ed0e2e6-01fe-44ab-9f0e-24cd7fe44b9f"
+          alt="Sponsor lassiecoder on GitHub"
+          className="h-8 w-auto rounded-lg"
+          width={100}
+          height={40}
+        />
+      </Link>
       <div className="text-sm pt-60 sm:mt-20 font-light text-center relative z-20 text-gray-400 max-w-7xl pb-8">
         Always be caffeinated! | © Priyanka Sharma (lassiecoder)
       </div>

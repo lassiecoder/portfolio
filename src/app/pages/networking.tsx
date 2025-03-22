@@ -1,8 +1,8 @@
 "use client";
 
 import React from "react";
-import { ParallaxScroll } from "@/components/ui/parallax-scroll";
 import { FlipWords } from "@/components/ui/flip-words";
+import { ParallaxScroll } from "@/components/ui/parallax-scroll";
 
 const Networking = () => {
   const words = ["Connecting, Learning, and Growing Together"];
@@ -14,17 +14,22 @@ const Networking = () => {
           <FlipWords words={words} duration={1000} />
         </div>
       </h2>
-      <h3 className="md:text-xl text-sm lg:text-xl font-medium text-left text-gray-400 max-w-7xl pb-8 lg:mb-4 pl-0 relative z-0">
+      <h3 className="md:text-xl text-sm lg:text-xl font-medium text-left text-gray-400 max-w-7xl lg:mb-4 pl-0 relative z-0">
         <p className="pb-12">
           Explore my insights and experiences from various{" "}
-          <span className="text-white"></span>industry events and
-          <span className="text-white"></span>meetups, where I share{" "}
-          <span className="text-white"></span>key takeaways,{" "}
-          <span className="text-white"></span>valuable connections, and moments
+          <span className="text-white">industry events</span> and{" "}
+          <span className="text-white">meetups</span>, where I share{" "}
+          <span className="text-white">key takeaways</span>,{" "}
+          <span className="text-white">valuable connections</span>, and moments
           that shaped my professional journey.
         </p>
       </h3>
-      <ParallaxScroll items={images} />
+      <button className="relative inline-flex h-200 overflow-hidden rounded-md p-[1px] focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-slate-50">
+        <span className="absolute inset-[-1000%] animate-[spin_2s_linear_infinite] bg-[conic-gradient(from_90deg_at_50%_50%,#E2CBFF_0%,#393BB2_50%,#E2CBFF_100%)]" />
+        <span className="inline-flex h-full w-full cursor-pointer items-center justify-center rounded-md bg-slate-950 px-3 py-1 text-sm font-medium text-white backdrop-blur-3xl px-4 py-4">
+          <ParallaxScroll items={images} />
+        </span>
+      </button>
     </div>
   );
 };
@@ -33,12 +38,20 @@ export default Networking;
 
 const images = [
   {
+    src: "https://github.com/user-attachments/assets/cd0c78f5-c6ba-4f8e-9837-558418aeb606",
+    href: "https://www.linkedin.com/feed/update/urn:li:activity:7306864289519128576"
+  },
+  {
     src: "https://github.com/user-attachments/assets/e6d60bde-990c-4062-bbcd-0715f18455a7",
     href: "https://www.linkedin.com/posts/priyanka-s-b79401142_keploy-gittogether-opensourcecommunity-activity-7169236453577646080-YoXh?utm_source=share&utm_medium=member_desktop"
   },
   {
     src: "https://github.com/user-attachments/assets/5c0b9253-31d6-456e-9a37-4e3e74ea0b54",
     href: "https://www.linkedin.com/posts/priyanka-s-b79401142_serverlessdays-bangalore-techcommunity-activity-7235735531211345920-RoQg?utm_source=share&utm_medium=member_desktop"
+  },
+  {
+    src: "https://github.com/user-attachments/assets/265a5c1f-b721-401e-ae6f-5021f2e05d38",
+    href: "https://www.linkedin.com/posts/technexuscommunity_microsoftai-azureopenai-aiinnovation-activity-7302707221094666241-9zWP?utm_source=share&utm_medium=member_desktop&rcm=ACoAACKWXU0BijJEUI16M7ei08EhKNgho2RX3xM"
   },
   {
     src: "https://github.com/user-attachments/assets/b8e71bf6-1002-46c6-a98b-de6cb0934e83",

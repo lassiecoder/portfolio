@@ -1,9 +1,18 @@
 "use client";
 import React from "react";
 import Link from "next/link";
+import ReactGA from "react-ga4";
+import { SiReaddotcv } from "react-icons/si";
 import { PinContainer } from "@/components/ui/3d-pin";
 
 export function Article() {
+  const trackReadMoreClick = () => {
+    ReactGA.event("article_read_more", {
+      category: "Articles",
+      label: "Read more - Tech Scoop"
+    });
+  };
+
   return (
     <div className="max-w-7xl mx-auto px-4 mt-32 pb-20 overflow-hidden font-medium">
       <div className="px-4">
@@ -29,18 +38,42 @@ export function Article() {
           </div>
         ))}
       </div>
+      <Link
+        onClick={trackReadMoreClick}
+        href={"https://techscoop.hashnode.dev"}
+        target="_blank"
+        className="flex justify-end items-center gap-1 w-full text-gray-300 hover:text-blue-400 transition-colors duration-300"
+      >
+        <span className="md:text-sm text-sm lg:text-sm font-normal px-1">
+          Read more
+        </span>
+        <SiReaddotcv className="text-xl" />
+      </Link>
     </div>
   );
 }
 
 const pinData = [
   {
-    techstack: "@medium.com/lassiecoder",
-    href: "https://sharmapriyanka84510.medium.com/keeping-your-open-source-repo-happy-with-github-community-health-files-1972e3dacc27",
-    heading:
-      "Keeping Your Open Source Repo Happy with GitHub Community Health Files",
+    techstack: "@techscoop/lassiecoder",
+    href: "https://techscoop.hashnode.dev/gemini-ai-in-chrome-devtools",
+    heading: "Gemini AI in Chrome DevTools",
     description:
-      "Explore essential strategies for organizing your open source repository, ensuring clarity and collaboration while avoiding chaos in the world of code maintenance."
+      "Google integrates Gemini AI into Chrome DevTools, offering AI-powered debugging, code optimization, security insights, and accessibility improvements for developers."
+  },
+  {
+    techstack: "@techscoop/lassiecoder",
+    href: "hhttps://techscoop.hashnode.dev/using-deepseek-r1-for-free-in-visual-studio-code",
+    heading: "Using DeepSeek R1 for Free in VSCode",
+    description:
+      "DeepSeek R1 - an open-source AI tool for code generation, seamlessly integrating with VSCode to enhance developer productivity and workflow efficiency."
+  },
+  {
+    techstack: "@medium.com/lassiecoder",
+    href: "https://medium.com/nerd-for-tech/how-to-become-an-open-source-contributor-c07acbc8e9ca",
+    heading: "How to Become an Open-Source Contributor",
+    description:
+      "If you’re looking to become an open-source contributor, this guide will walk you through everything you need to know to get started, from finding projects to making your first contribution."
   },
   {
     techstack: "@medium.com/lassiecoder",
@@ -48,13 +81,6 @@ const pinData = [
     heading: "Git Commit Guidelines",
     description:
       "A comprehensive guide to crafting clear and meaningful Git commit messages, enhancing collaboration, maintainability, and understanding throughout the development process for future contributors."
-  },
-  {
-    techstack: "@dev.to/lassiecoder/",
-    href: "https://dev.to/lassiecoder/git-common-developer-pitfalls-and-solutions-5aim",
-    heading: "Git <> Common Developer Pitfalls and Solutions",
-    description:
-      "This article tackles typical Git challenges and offers actionable remedies to enhance version control and teamwork, empowering developers to optimize their workflows and collaboration processes."
   },
   {
     techstack: "@medium.com/lassiecoder",
