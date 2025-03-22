@@ -63,7 +63,7 @@ const pinData = [
   },
   {
     techstack: "@techscoop/lassiecoder",
-    href: "hhttps://techscoop.hashnode.dev/using-deepseek-r1-for-free-in-visual-studio-code",
+    href: "https://techscoop.hashnode.dev/using-deepseek-r1-for-free-in-visual-studio-code",
     heading: "Using DeepSeek R1 for Free in VSCode",
     description:
       "DeepSeek R1 - an open-source AI tool for code generation, seamlessly integrating with VSCode to enhance developer productivity and workflow efficiency."
