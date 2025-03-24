@@ -18,7 +18,7 @@ export default function Home() {
   }, []);
 
   return (
-    <div className="font-sans">
+    <div className="font-sans bg-black">
       <HomeScreen />
       <About />
       <Experience />

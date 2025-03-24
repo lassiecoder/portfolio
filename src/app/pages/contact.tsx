@@ -24,7 +24,7 @@ const ContactForm = () => {
           <div className="flex flex-col items-start w-full sm:flex-row sm:header-container">
             <div className="title-box">
               <p
-                className="text"
+                className="text text-white"
                 style={{ width: "max-content", marginRight: "0.8rem" }}
               >
                 I&apos;m open for
