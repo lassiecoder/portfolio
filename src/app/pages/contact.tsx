@@ -20,9 +20,15 @@ const ContactForm = () => {
     <div className="max-w-7xl mx-auto px-4 mt-44 ">
       <div className="px-4">
         <h2 className="md:text-4xl text-2xl lg:text-4xl font-bold text-left pb-12 xl:pl-0 lg:mb-0 sm:mb-0 relative z-10 w-[100%]">
-          <div className="flex flex-row header-container">
+          {/* <div className="flex flex-row header-container"> */}
+          <div className="flex flex-col items-start w-full sm:flex-row sm:header-container">
             <div className="title-box">
-              <p className="text">I&apos;m open for</p>
+              <p
+                className="text"
+                style={{ width: "max-content", marginRight: "0.8rem" }}
+              >
+                I&apos;m open for
+              </p>
             </div>
             <div className="subtitle-box">
               <FlipWords words={words} duration={1000} />
@@ -74,6 +80,7 @@ const ContactForm = () => {
           className="h-8 w-auto rounded-lg"
           width={100}
           height={40}
+          style={{ width: "100%", height: "auto" }}
         />
       </Link>
       <div className="text-sm pt-60 sm:mt-20 font-light text-center relative z-20 text-gray-400 max-w-7xl pb-8">
