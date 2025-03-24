@@ -22,11 +22,11 @@ export default function Footer() {
   return (
     <div className="flex bg-black w-full items-center xl:px-8 lg:px-8 md:px-8 px-4 pt-6">
       {/* Container that changes between centered/between based on screen size */}
-      <div className="w-full flex justify-center md:justify-between items-center">
+      <div className="w-full flex justify-center md:justify-between sm:justify-between items-center">
         {/* Left Side - GitHub Sponsor Button */}
         <Link
           href={"https://github.com/sponsors/lassiecoder"}
-          className="inline-flex items-center ml-4 w-[100px] h-[40px]"
+          className="inline-flex items-center mr-4 w-[100px] h-[40px]"
           onClick={trackSponsorClick}
         >
           <Image
@@ -34,7 +34,8 @@ export default function Footer() {
             alt="Sponsor lassiecoder on GitHub"
             className="h-8 w-auto rounded-lg"
             width={100}
-            height={40}
+            height={10}
+            style={{ width: "100%", height: "auto" }}
           />
         </Link>
 
