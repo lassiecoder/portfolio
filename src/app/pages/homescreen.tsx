@@ -17,7 +17,7 @@ export default function HomeScreen() {
     <div className="h-screen ">
       {/* home screen */}
       <Footer />
-      <div className="h-screen w-full bg-black flex flex-col items-center justify-center overflow-hidden rounded-md">
+      <div className="h-screen w-full bg-black flex flex-col items-center justify-center overflow-hidden">
         <h1 className="md:text-5xl text-2xl lg:text-6xl font-bold text-center text-white relative z-20 mt-30">
           <div className="flex header-container">
             <div className="subtitle-box ">
