@@ -30,7 +30,7 @@ export default function Footer() {
           onClick={trackSponsorClick}
         >
           <Image
-            src="https://github.com/user-attachments/assets/0ed0e2e6-01fe-44ab-9f0e-24cd7fe44b9f"
+            src="/sponsor-icon.png"
             alt="Sponsor lassiecoder on GitHub"
             className="h-8 w-auto rounded-lg"
             width={100}
