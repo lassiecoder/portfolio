@@ -137,8 +137,7 @@ const dummyData = [
     title: "Community Health Files",
     description:
       "The community-health-files package automates the setup and management  for open-source projects, providing a streamlined way to maintain project guidelines and policies.",
-    image:
-      "https://github.com/user-attachments/assets/cc1e0729-4de9-4014-8ef2-be3f47844d91",
+    image: "/project-1.png",
     link: "https://github.com/lassiecoder/community-health-files",
     repo: "community-health-files",
     projectType: ""
@@ -147,8 +146,7 @@ const dummyData = [
     title: "GitHub README",
     description:
       "A dynamic GitHub profile showcasing JavaScript expertise, tech writing, speaking, and community contributions with engaging visuals, stats, and social links.",
-    image:
-      "https://github.com/user-attachments/assets/7c3a6b68-4503-445e-b5c3-0bc57d348a56",
+    image: "/project-2.png",
     link: "https://github.com/lassiecoder/lassiecoder",
     repo: "lassiecoder",
     projectType: ""
@@ -157,8 +155,7 @@ const dummyData = [
     title: "Shoplane – E-commerce website",
     description:
       "Shoplane's GitHub repository, with 340 stars and 250 forks, is a significant player in open-source e-commerce, influencing the online retail sector's development.",
-    image:
-      "https://github.com/lassiecoder/portfolio/assets/17312616/357237f8-298a-4f77-9cf4-63bea0b9892d",
+    image: "/project-3.png",
     link: "https://github.com/lassiecoder/E-CommerceWebsite",
     repo: "E-CommerceWebsite",
     projectType: ""
@@ -167,8 +164,7 @@ const dummyData = [
     title: "npx lassiecoder – in your terminal?",
     description:
       "A personalized command-line business card. This innovative tool allows you to showcase your professional profile, skills, and contact information in the terminal.",
-    image:
-      "https://github.com/lassiecoder/npx-lassiecoder/assets/17312616/fb0fd710-69ef-46ef-9f73-54ee4149c86f",
+    image: "/project-4.gif",
     link: "https://github.com/lassiecoder/npx-lassiecoder",
     repo: "npx-lassiecoder",
     projectType: ""
@@ -177,8 +173,7 @@ const dummyData = [
     title: "EduFund - Mutual Funds & SIP",
     description:
       "EduFund, India's leading investment app, helps parents save for their children's education, ensuring a brighter future amid rising education expenses.",
-    image:
-      "https://github.com/lassiecoder/portfolio/assets/17312616/08a65762-328a-480e-bd20-cdc7df1a5a73",
+    image: "/project-5.png",
     link: "https://play.google.com/store/apps/details?id=com.educationfund.edufund",
     repo: "",
     projectType: "work-project"
@@ -187,8 +182,7 @@ const dummyData = [
     title: "Torum: Cryptocurrency Social App",
     description:
       "Torum's mobile app fosters a vibrant SocialFi ecosystem, connecting over 230,000 cryptocurrency enthusiasts since its 2018 inception.",
-    image:
-      "https://github.com/lassiecoder/portfolio/assets/17312616/b86aa717-34bf-4aa2-a8fd-ae850e27ff62",
+    image: "/project-6.png",
     link: "https://play.google.com/store/apps/details?id=com.torum.app&amp;hl=en_IN&amp;gl=US",
     repo: "",
     projectType: "work-project"
@@ -197,8 +191,7 @@ const dummyData = [
     title: "Mutual funding app",
     description:
       "The proof-of-concept app exhibits mutual funds with authentication, presenting a scrollable list of key fund information. Selecting a fund directs users to a detailed product page for additional insights.",
-    image:
-      "https://github.com/lassiecoder/portfolio/assets/17312616/fbcc8292-4b94-4156-8125-07ac93f9266e",
+    image: "/project-7.png",
     link: "https://github.com/lassiecoder/mutual-funding-app",
     repo: "mutual-funding-app",
     projectType: ""
@@ -207,8 +200,7 @@ const dummyData = [
     title: "Adecco",
     description:
       "The Adecco mobile app transforms job placement with accuracy, speed, and thorough evaluation. Daily linking over 700,000 individuals to top-tier global opportunities.",
-    image:
-      "https://github.com/lassiecoder/portfolio/assets/17312616/261c3286-edf3-4ba9-bf70-027fde826915",
+    image: "/project-8.png",
     link: "https://play.google.com/store/apps/details?id=com.adecco.app20&amp;hl=en_IN&amp;gl=US",
     repo: "",
     projectType: "work-project"

@@ -38,59 +38,59 @@ export default Networking;
 
 const images = [
   {
-    src: "https://github.com/user-attachments/assets/cd0c78f5-c6ba-4f8e-9837-558418aeb606",
+    src: "/networking-1.png",
     href: "https://www.linkedin.com/feed/update/urn:li:activity:7306864289519128576"
   },
   {
-    src: "https://github.com/user-attachments/assets/e6d60bde-990c-4062-bbcd-0715f18455a7",
+    src: "/networking-2.png",
     href: "https://www.linkedin.com/posts/priyanka-s-b79401142_keploy-gittogether-opensourcecommunity-activity-7169236453577646080-YoXh?utm_source=share&utm_medium=member_desktop"
   },
   {
-    src: "https://github.com/user-attachments/assets/5c0b9253-31d6-456e-9a37-4e3e74ea0b54",
+    src: "/networking-3.png",
     href: "https://www.linkedin.com/posts/priyanka-s-b79401142_serverlessdays-bangalore-techcommunity-activity-7235735531211345920-RoQg?utm_source=share&utm_medium=member_desktop"
   },
   {
-    src: "https://github.com/user-attachments/assets/265a5c1f-b721-401e-ae6f-5021f2e05d38",
+    src: "/networking-4.png",
     href: "https://www.linkedin.com/posts/technexuscommunity_microsoftai-azureopenai-aiinnovation-activity-7302707221094666241-9zWP?utm_source=share&utm_medium=member_desktop&rcm=ACoAACKWXU0BijJEUI16M7ei08EhKNgho2RX3xM"
   },
   {
-    src: "https://github.com/user-attachments/assets/b8e71bf6-1002-46c6-a98b-de6cb0934e83",
+    src: "/networking-5.png",
     href: "https://www.linkedin.com/posts/priyanka-s-b79401142_thats-a-wrap-for-serverlessdays-bengaluru-activity-7235948907954892802-3tpT?utm_source=share&utm_medium=member_desktop"
   },
   {
-    src: "https://github.com/user-attachments/assets/343e7f94-00f1-437a-b731-0fc0ff446fad",
+    src: "/networking-6.png",
     href: "https://www.linkedin.com/posts/priyanka-s-b79401142_githubconstellation-oss-developercommunity-activity-7206725289031196673-8D-l?utm_source=share&utm_medium=member_desktop"
   },
   {
-    src: "https://github.com/user-attachments/assets/00047cbc-041d-4b05-b8da-1deb2e3bdc8b",
+    src: "/networking-7.png",
     href: "https://x.com/lassiecoder/status/1836049315778678872"
   },
   {
-    src: "https://github.com/user-attachments/assets/1fdbe030-bce7-48d5-9acf-c65b4e1cc813",
+    src: "/networking-8.png",
     href: "https://x.com/lassiecoder/status/1829883911675183349"
   },
   {
-    src: "https://github.com/user-attachments/assets/de93e7cc-29c6-4dc7-af61-b80fae69e468",
+    src: "/networking-9.png",
     href: "https://www.linkedin.com/posts/priyanka-s-b79401142_gittogether-gittogetherbengaluru-opensource-activity-7233815879728123904-XVV9?utm_source=share&utm_medium=member_desktop"
   },
   {
-    src: "https://github.com/user-attachments/assets/124f00df-f9a8-4258-af12-94354b6e0210",
+    src: "/networking-10.png",
     href: "https://x.com/adityaoberai1/status/1763221813625331791"
   },
   {
-    src: "https://github.com/user-attachments/assets/efdec091-f9ad-426d-a22c-1a3db9ed767e",
+    src: "/networking-11.png",
     href: "https://www.linkedin.com/posts/priyanka-s-b79401142_elevatevirtualconference-girlgeekx-networking-activity-7204481662913544193-aFAM?utm_source=share&utm_medium=member_desktop"
   },
   {
-    src: "https://github.com/user-attachments/assets/d5fd74c5-1cb9-4aa5-8a02-fc7859e15a4d",
+    src: "/networking-12.png",
     href: "https://x.com/edjgeek/status/1830168978603282712"
   },
   {
-    src: "https://github.com/user-attachments/assets/3d613f20-ef91-4757-8e7d-fae26fce626b",
+    src: "/networking-13.png",
     href: "https://x.com/lassiecoder/status/1823067516165308606"
   },
   {
-    src: "https://github.com/user-attachments/assets/13e76eec-4e8b-4b25-9b25-fb9ad4f2e149",
+    src: "/networking-14.png",
     href: "https://www.linkedin.com/posts/priyanka-s-b79401142_gittogether-opensource-techcommunity-activity-7215039647247159296-g6qD?utm_source=share&utm_medium=member_desktop"
   }
 ];
