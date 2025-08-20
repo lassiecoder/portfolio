@@ -43,3 +43,32 @@ body {
 .animate-spin-slow {
   animation: spin-slow 10s linear infinite;
 }
+
+.blob {
+  background: #2c98e7;
+  border-radius: 50%;
+  margin: 4px;
+  height: 10px;
+  width: 10px;
+
+  box-shadow: 0 0 0 0 #82bee9;
+  transform: scale(1);
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(0.55);
+    box-shadow: 0 0 0 0 #82bee9;
+  }
+
+  70% {
+    transform: scale(1);
+    box-shadow: 0 0 0 8px rgba(0, 0, 0, 0);
+  }
+
+  100% {
+    transform: scale(0.75);
+    box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+  }
+}
