@@ -127,7 +127,8 @@ function IconContainer({
   icon: React.ReactNode;
   href: string;
 }) {
-  let ref = useRef<HTMLDivElement>(null);
+  // let ref = useRef<HTMLDivElement>(null);
+  const ref = useRef<HTMLDivElement>(null!) as React.RefObject<HTMLElement>;
 
   let distance = useTransform(mouseX, (val) => {
     let bounds = ref.current?.getBoundingClientRect() ?? { x: 0, width: 0 };
