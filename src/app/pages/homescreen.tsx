@@ -5,17 +5,19 @@ import {
   IconExchange,
   IconHome,
   IconNewSection,
-  IconTerminal2
+  IconTerminal2,
 } from "@tabler/icons-react";
 import Image from "next/image";
 import { FlipWords } from "@/components/ui/flip-words";
 import { SparklesCore } from "@/components/ui/sparkles";
+import { EbookStickyBanner } from "../sticky-banner";
 
 export default function HomeScreen() {
   const words = ["Hi! I'm Priyanka Sharma"];
   return (
-    <div className="h-screen ">
+    <div className="h-screen">
       {/* home screen */}
+      <EbookStickyBanner />
       <Footer />
       <div className="h-screen w-full bg-black flex flex-col items-center justify-center overflow-hidden">
         <h1 className="md:text-5xl text-2xl lg:text-6xl font-bold text-center text-white relative z-20 mt-30">
@@ -71,7 +73,7 @@ const links = [
     icon: (
       <IconHome className="h-full w-full text-neutral-500 dark:text-neutral-300" />
     ),
-    href: "#"
+    href: "#",
   },
 
   {
@@ -79,14 +81,14 @@ const links = [
     icon: (
       <IconTerminal2 className="h-full w-full text-neutral-500 dark:text-neutral-300" />
     ),
-    href: "#"
+    href: "#",
   },
   {
     title: "Components",
     icon: (
       <IconNewSection className="h-full w-full text-neutral-500 dark:text-neutral-300" />
     ),
-    href: "#"
+    href: "#",
   },
   {
     title: "Aceternity UI",
@@ -98,14 +100,14 @@ const links = [
         alt="Aceternity Logo"
       />
     ),
-    href: "#"
+    href: "#",
   },
   {
     title: "Changelog",
     icon: (
       <IconExchange className="h-full w-full text-neutral-500 dark:text-neutral-300" />
     ),
-    href: "#"
+    href: "#",
   },
 
   {
@@ -113,13 +115,13 @@ const links = [
     icon: (
       <IconBrandX className="h-full w-full text-neutral-500 dark:text-neutral-300" />
     ),
-    href: "#"
+    href: "#",
   },
   {
     title: "GitHub",
     icon: (
       <IconBrandGithub className="h-full w-full text-neutral-500 dark:text-neutral-300" />
     ),
-    href: "#"
-  }
+    href: "#",
+  },
 ];

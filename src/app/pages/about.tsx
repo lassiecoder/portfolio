@@ -5,6 +5,7 @@ import Link from "next/link";
 import React from "react";
 import { HiMiniBellAlert } from "react-icons/hi2";
 import { IoGitNetworkOutline } from "react-icons/io5";
+import { FaAws } from "react-icons/fa";
 
 const About = () => {
   return (
@@ -80,7 +81,17 @@ const About = () => {
           delivering impactful solutions that drive success. My commitment to
           innovation and excellence defines every project I undertake.
         </p>
+        <p className="mt-6">
+          I was also selected for the{" "}
+          <span className="bg-gradient-to-r from-purple-600 to-gray-400 text-transparent bg-clip-text">
+            <FaAws className="inline text-2xl lg:text-3xl text-purple-600" />{" "}
+            re:Invent All Builders Welcome Grant 2025
+          </span>
+          , a global program that recognizes and supports promising builders in
+          the tech community.
+        </p>
       </h3>
+
       <div className="flex justify-center items-center space-x-3 max-[478px]:flex-col max-[478px]:space-x-0 max-[478px]:space-y-3">
         <Link
           href={"https://techscoop.hashnode.dev/newsletter"}

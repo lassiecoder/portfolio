@@ -9,7 +9,7 @@ import { useScroll, useTransform } from "framer-motion";
 
 export const ParallaxScroll = ({
   items,
-  className
+  className,
 }: {
   items: { src: string; href: string }[];
   className?: string;
@@ -17,7 +17,7 @@ export const ParallaxScroll = ({
   const gridRef = useRef<any>(null);
   const { scrollYProgress } = useScroll({
     container: gridRef,
-    offset: ["start start", "end start"]
+    offset: ["start start", "end start"],
   });
 
   const translateFirst = useTransform(scrollYProgress, [0, 1], [0, -200]);

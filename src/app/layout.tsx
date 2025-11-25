@@ -7,23 +7,23 @@ export const metadata: Metadata = {
   title:
     "Portfolio | Priyanka Sharma (lassiecoder) | Mobile & Web app developer",
   description:
-    "Crafting compelling narratives through design, merging creativity with functionality seamlessly."
+    "Crafting compelling narratives through design, merging creativity with functionality seamlessly.",
 };
 
 const montserrat = Montserrat({
   subsets: ["latin"],
   display: "swap",
-  variable: "--font-montserrat"
+  variable: "--font-montserrat",
 });
 
 export default function RootLayout({
-  children
+  children,
 }: Readonly<{
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={`${montserrat.variable}`}>
-      <body className={montserrat.className}>{children}</body>
+    <html lang="en" className={`${montserrat.variable} dark`}>
+      <body className={`${montserrat.className} bg-black`}>{children}</body>
     </html>
   );
 }

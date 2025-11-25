@@ -38,59 +38,71 @@ export default Networking;
 
 const images = [
   {
+    src: "/networking-17.png",
+    href: "https://www.linkedin.com/feed/update/urn:li:activity:7387467149948362752",
+  },
+  {
+    src: "/networking-16.png",
+    href: "https://www.linkedin.com/feed/update/urn:li:activity:7398725414334058496",
+  },
+  {
+    src: "/networking-15.png",
+    href: "https://www.linkedin.com/feed/update/urn:li:activity:7375709928671346688",
+  },
+  {
     src: "/networking-1.png",
-    href: "https://www.linkedin.com/feed/update/urn:li:activity:7306864289519128576"
+    href: "https://www.linkedin.com/feed/update/urn:li:activity:7306864289519128576",
   },
   {
     src: "/networking-2.png",
-    href: "https://www.linkedin.com/posts/priyanka-s-b79401142_keploy-gittogether-opensourcecommunity-activity-7169236453577646080-YoXh?utm_source=share&utm_medium=member_desktop"
+    href: "https://www.linkedin.com/posts/priyanka-s-b79401142_keploy-gittogether-opensourcecommunity-activity-7169236453577646080-YoXh?utm_source=share&utm_medium=member_desktop",
   },
   {
     src: "/networking-3.png",
-    href: "https://www.linkedin.com/posts/priyanka-s-b79401142_serverlessdays-bangalore-techcommunity-activity-7235735531211345920-RoQg?utm_source=share&utm_medium=member_desktop"
+    href: "https://www.linkedin.com/posts/priyanka-s-b79401142_serverlessdays-bangalore-techcommunity-activity-7235735531211345920-RoQg?utm_source=share&utm_medium=member_desktop",
   },
   {
     src: "/networking-4.png",
-    href: "https://www.linkedin.com/posts/technexuscommunity_microsoftai-azureopenai-aiinnovation-activity-7302707221094666241-9zWP?utm_source=share&utm_medium=member_desktop&rcm=ACoAACKWXU0BijJEUI16M7ei08EhKNgho2RX3xM"
+    href: "https://www.linkedin.com/posts/technexuscommunity_microsoftai-azureopenai-aiinnovation-activity-7302707221094666241-9zWP?utm_source=share&utm_medium=member_desktop&rcm=ACoAACKWXU0BijJEUI16M7ei08EhKNgho2RX3xM",
   },
   {
     src: "/networking-5.png",
-    href: "https://www.linkedin.com/posts/priyanka-s-b79401142_thats-a-wrap-for-serverlessdays-bengaluru-activity-7235948907954892802-3tpT?utm_source=share&utm_medium=member_desktop"
+    href: "https://www.linkedin.com/posts/priyanka-s-b79401142_thats-a-wrap-for-serverlessdays-bengaluru-activity-7235948907954892802-3tpT?utm_source=share&utm_medium=member_desktop",
   },
   {
     src: "/networking-6.png",
-    href: "https://www.linkedin.com/posts/priyanka-s-b79401142_githubconstellation-oss-developercommunity-activity-7206725289031196673-8D-l?utm_source=share&utm_medium=member_desktop"
+    href: "https://www.linkedin.com/posts/priyanka-s-b79401142_githubconstellation-oss-developercommunity-activity-7206725289031196673-8D-l?utm_source=share&utm_medium=member_desktop",
   },
   {
     src: "/networking-7.png",
-    href: "https://x.com/lassiecoder/status/1836049315778678872"
+    href: "https://x.com/lassiecoder/status/1836049315778678872",
   },
   {
     src: "/networking-8.png",
-    href: "https://x.com/lassiecoder/status/1829883911675183349"
+    href: "https://x.com/lassiecoder/status/1829883911675183349",
   },
   {
     src: "/networking-9.png",
-    href: "https://www.linkedin.com/posts/priyanka-s-b79401142_gittogether-gittogetherbengaluru-opensource-activity-7233815879728123904-XVV9?utm_source=share&utm_medium=member_desktop"
+    href: "https://www.linkedin.com/posts/priyanka-s-b79401142_gittogether-gittogetherbengaluru-opensource-activity-7233815879728123904-XVV9?utm_source=share&utm_medium=member_desktop",
   },
   {
     src: "/networking-10.png",
-    href: "https://x.com/adityaoberai1/status/1763221813625331791"
+    href: "https://x.com/adityaoberai1/status/1763221813625331791",
   },
   {
     src: "/networking-11.png",
-    href: "https://www.linkedin.com/posts/priyanka-s-b79401142_elevatevirtualconference-girlgeekx-networking-activity-7204481662913544193-aFAM?utm_source=share&utm_medium=member_desktop"
+    href: "https://www.linkedin.com/posts/priyanka-s-b79401142_elevatevirtualconference-girlgeekx-networking-activity-7204481662913544193-aFAM?utm_source=share&utm_medium=member_desktop",
   },
   {
     src: "/networking-12.png",
-    href: "https://x.com/edjgeek/status/1830168978603282712"
+    href: "https://x.com/edjgeek/status/1830168978603282712",
   },
   {
     src: "/networking-13.png",
-    href: "https://x.com/lassiecoder/status/1823067516165308606"
+    href: "https://x.com/lassiecoder/status/1823067516165308606",
   },
   {
     src: "/networking-14.png",
-    href: "https://www.linkedin.com/posts/priyanka-s-b79401142_gittogether-opensource-techcommunity-activity-7215039647247159296-g6qD?utm_source=share&utm_medium=member_desktop"
-  }
+    href: "https://www.linkedin.com/posts/priyanka-s-b79401142_gittogether-opensource-techcommunity-activity-7215039647247159296-g6qD?utm_source=share&utm_medium=member_desktop",
+  },
 ];
