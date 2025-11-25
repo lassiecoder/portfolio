@@ -12,7 +12,7 @@ import {
   motion,
   useMotionValue,
   useSpring,
-  useTransform
+  useTransform,
 } from "framer-motion";
 import Link from "next/link";
 import { useRef, useState } from "react";
@@ -20,7 +20,7 @@ import { useRef, useState } from "react";
 export const FloatingDock = ({
   items,
   desktopClassName,
-  mobileClassName
+  mobileClassName,
 }: {
   items: { title: string; icon: React.ReactNode; href: string }[];
   desktopClassName?: string;
@@ -36,7 +36,7 @@ export const FloatingDock = ({
 
 const FloatingDockMobile = ({
   items,
-  className
+  className,
 }: {
   items: { title: string; icon: React.ReactNode; href: string }[];
   className?: string;
@@ -50,7 +50,7 @@ const FloatingDockMobile = ({
             layoutId="nav"
             {...{
               className:
-                "absolute bottom-full mb-2 inset-x-0 flex flex-col gap-2"
+                "absolute bottom-full mb-2 inset-x-0 flex flex-col gap-2",
             }}
           >
             {items.map((item, idx) => (
@@ -59,14 +59,14 @@ const FloatingDockMobile = ({
                 initial={{ opacity: 0, y: 10 }}
                 animate={{
                   opacity: 1,
-                  y: 0
+                  y: 0,
                 }}
                 exit={{
                   opacity: 0,
                   y: 10,
                   transition: {
-                    delay: idx * 0.05
-                  }
+                    delay: idx * 0.05,
+                  },
                 }}
                 transition={{ delay: (items.length - 1 - idx) * 0.05 }}
               >
@@ -94,7 +94,7 @@ const FloatingDockMobile = ({
 
 const FloatingDockDesktop = ({
   items,
-  className
+  className,
 }: {
   items: { title: string; icon: React.ReactNode; href: string }[];
   className?: string;
@@ -120,7 +120,7 @@ function IconContainer({
   mouseX,
   title,
   icon,
-  href
+  href,
 }: {
   mouseX: MotionValue;
   title: string;
@@ -148,23 +148,23 @@ function IconContainer({
   let width = useSpring(widthTransform, {
     mass: 0.1,
     stiffness: 150,
-    damping: 12
+    damping: 12,
   });
   let height = useSpring(heightTransform, {
     mass: 0.1,
     stiffness: 150,
-    damping: 12
+    damping: 12,
   });
 
   let widthIcon = useSpring(widthTransformIcon, {
     mass: 0.1,
     stiffness: 150,
-    damping: 12
+    damping: 12,
   });
   let heightIcon = useSpring(heightTransformIcon, {
     mass: 0.1,
     stiffness: 150,
-    damping: 12
+    damping: 12,
   });
 
   const [hovered, setHovered] = useState(false);
@@ -178,7 +178,7 @@ function IconContainer({
           onMouseEnter: () => setHovered(true),
           onMouseLeave: () => setHovered(false),
           className:
-            "aspect-square rounded-full bg-gray-200 dark:bg-neutral-800 flex items-center justify-center relative"
+            "aspect-square rounded-full bg-gray-200 dark:bg-neutral-800 flex items-center justify-center relative",
         }}
       >
         <AnimatePresence>
