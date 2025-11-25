@@ -127,8 +127,7 @@ function IconContainer({
   icon: React.ReactNode;
   href: string;
 }) {
-  // let ref = useRef<HTMLDivElement>(null);
-  const ref = useRef<HTMLDivElement>(null!) as React.RefObject<HTMLElement>;
+  let ref = useRef<HTMLDivElement>(null);
 
   let distance = useTransform(mouseX, (val) => {
     let bounds = ref.current?.getBoundingClientRect() ?? { x: 0, width: 0 };
@@ -174,13 +173,10 @@ function IconContainer({
     <Link href={href}>
       <motion.div
         ref={ref}
-        {...{
-          style: { width, height },
-          onMouseEnter: () => setHovered(true),
-          onMouseLeave: () => setHovered(false),
-          className:
-            "aspect-square rounded-full bg-gray-200 dark:bg-neutral-800 flex items-center justify-center relative",
-        }}
+        style={{ width, height }}
+        onMouseEnter={() => setHovered(true)}
+        onMouseLeave={() => setHovered(false)}
+        className="aspect-square rounded-full bg-gray-200 dark:bg-neutral-800 flex items-center justify-center relative"
       >
         <AnimatePresence>
           {/* {hovered && (
