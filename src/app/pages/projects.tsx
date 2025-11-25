@@ -27,7 +27,7 @@ const ThreeDCard = () => {
             return {
               repo: item.repo,
               stars: data.stargazers_count,
-              forks: data.forks_count
+              forks: data.forks_count,
             };
           })
         );
@@ -134,13 +134,22 @@ export default ThreeDCard;
 
 const dummyData = [
   {
+    title: "Enterprise Dashboard",
+    description:
+      "A modern enterprise dashboard with analytics, eCommerce management, and interactive data visualizations.",
+    image: "/project-0.png",
+    link: "https://github.com/lassiecoder/enterprise-dashboard",
+    repo: "enterprise-dashboard",
+    projectType: "",
+  },
+  {
     title: "Community Health Files",
     description:
       "The community-health-files package automates the setup and management  for open-source projects, providing a streamlined way to maintain project guidelines and policies.",
     image: "/project-1.png",
     link: "https://github.com/lassiecoder/community-health-files",
     repo: "community-health-files",
-    projectType: ""
+    projectType: "",
   },
   {
     title: "GitHub README",
@@ -149,7 +158,7 @@ const dummyData = [
     image: "/project-2.png",
     link: "https://github.com/lassiecoder/lassiecoder",
     repo: "lassiecoder",
-    projectType: ""
+    projectType: "",
   },
   {
     title: "Shoplane – E-commerce website",
@@ -158,7 +167,7 @@ const dummyData = [
     image: "/project-3.png",
     link: "https://github.com/lassiecoder/E-CommerceWebsite",
     repo: "E-CommerceWebsite",
-    projectType: ""
+    projectType: "",
   },
   {
     title: "npx lassiecoder – in your terminal?",
@@ -167,7 +176,7 @@ const dummyData = [
     image: "/project-4.gif",
     link: "https://github.com/lassiecoder/npx-lassiecoder",
     repo: "npx-lassiecoder",
-    projectType: ""
+    projectType: "",
   },
   {
     title: "EduFund - Mutual Funds & SIP",
@@ -176,7 +185,7 @@ const dummyData = [
     image: "/project-5.png",
     link: "https://play.google.com/store/apps/details?id=com.educationfund.edufund",
     repo: "",
-    projectType: "work-project"
+    projectType: "work-project",
   },
   {
     title: "Torum: Cryptocurrency Social App",
@@ -185,7 +194,7 @@ const dummyData = [
     image: "/project-6.png",
     link: "https://play.google.com/store/apps/details?id=com.torum.app&amp;hl=en_IN&amp;gl=US",
     repo: "",
-    projectType: "work-project"
+    projectType: "work-project",
   },
   {
     title: "Mutual funding app",
@@ -194,7 +203,7 @@ const dummyData = [
     image: "/project-7.png",
     link: "https://github.com/lassiecoder/mutual-funding-app",
     repo: "mutual-funding-app",
-    projectType: ""
+    projectType: "",
   },
   {
     title: "Adecco",
@@ -203,6 +212,6 @@ const dummyData = [
     image: "/project-8.png",
     link: "https://play.google.com/store/apps/details?id=com.adecco.app20&amp;hl=en_IN&amp;gl=US",
     repo: "",
-    projectType: "work-project"
-  }
+    projectType: "work-project",
+  },
 ];

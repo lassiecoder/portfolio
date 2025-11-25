@@ -22,8 +22,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={`${montserrat.variable}`}>
-      <body className={montserrat.className}>{children}</body>
+    <html lang="en" className={`${montserrat.variable} dark`}>
+      <body className={`${montserrat.className} bg-black`}>{children}</body>
     </html>
   );
 }
