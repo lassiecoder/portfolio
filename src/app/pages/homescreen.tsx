@@ -1,3 +1,5 @@
+"use client";
+
 import Footer from "@/components/footer";
 import {
   IconBrandGithub,
@@ -11,8 +13,14 @@ import Image from "next/image";
 import { FlipWords } from "@/components/ui/flip-words";
 import { SparklesCore } from "@/components/ui/sparkles";
 import { EbookStickyBanner } from "../sticky-banner";
+import { useEffect } from "react";
+import ReactGA from "react-ga4";
 
 export default function HomeScreen() {
+  useEffect(() => {
+    ReactGA.initialize("G-PYQ50G2GWN");
+  }, []);
+
   const words = ["Hi! I'm Priyanka Sharma"];
   return (
     <div className="h-screen">

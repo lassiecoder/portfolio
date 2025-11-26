@@ -1,3 +1,5 @@
+"use client";
+
 import Image from "next/image";
 import React, { useEffect, useState } from "react";
 import { Timeline } from "@/components/ui/timeline";
@@ -100,7 +102,7 @@ export function Experience() {
             </div>
           </div>
         </div>
-      )
+      ),
     },
     {
       title: (
@@ -208,7 +210,7 @@ export function Experience() {
             </div>
           </div>
         </div>
-      )
+      ),
     },
     {
       title: (
@@ -305,8 +307,8 @@ export function Experience() {
             </div>
           </div>
         </div>
-      )
-    }
+      ),
+    },
   ];
   return (
     <div className="max-w-7xl mx-auto px-4 mt-20 ">
