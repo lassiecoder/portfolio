@@ -81,6 +81,7 @@ const ContactForm = () => {
           width={100}
           height={40}
           style={{ width: "100%", height: "auto" }}
+          loading="lazy"
         />
       </Link>
       <div className="text-sm pt-60 sm:mt-20 font-light text-center relative z-20 text-gray-400 max-w-7xl pb-8">

@@ -21,7 +21,7 @@ const About = () => {
           <span className="text-white">lassiecoder</span> in the tech community.
         </p>
         <p className="mt-6">
-          With <span className="text-white">4 years </span>
+          With <span className="text-white">~6 years </span>
           of experience as a <span className="text-white"></span>
           <span className="text-white">Software Developer</span>, I specialize
           in <span className="text-white"></span>mobile and web app development.
@@ -33,7 +33,7 @@ const About = () => {
           {/* <span className="text-white">React ecosystems</span> */}
           <Tooltip
             text="React ecosystems"
-            tooltipText="React Native, ReactJS, NextJS, Storybook, Expo"
+            tooltipText="Astro, NextJS, Storybook, Expo, React Native, ReactJS"
             className="text-white"
           />
           , along with{" "}
@@ -71,16 +71,16 @@ const About = () => {
           <Tooltip text="testing" tooltipText="Jest" className="text-white" />.
         </p>
         <p className="mt-6">
-          Currently, I&apos;m contributing my skills to{" "}
-          <span className="text-white">The Adecco Group</span>, a leading{" "}
-          <span className="text-white">Swiss company</span> known for innovative
-          solutions.
+          Currently, I&apos;m working as an{" "}
+          <span className="text-white">SDE2</span> at a{" "}
+          <span className="text-white">US-based startup</span>, building
+          full-stack web and mobile products end-to-end.
         </p>
-        <p className="mt-6">
+        {/* <p className="mt-6">
           I&apos;m passionate about pushing technological boundaries and
           delivering impactful solutions that drive success. My commitment to
           innovation and excellence defines every project I undertake.
-        </p>
+        </p> */}
         <p className="mt-6">
           I was also selected for the{" "}
           <span className="bg-gradient-to-r from-purple-600 to-gray-400 text-transparent bg-clip-text">

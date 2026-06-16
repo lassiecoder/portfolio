@@ -86,7 +86,7 @@ const ThreeDCard = () => {
                     width={1000}
                     className="h-40 sm:h-44 md:h-48 w-full object-cover rounded-xl group-hover/card:shadow-xl"
                     alt="thumbnail"
-                    priority
+                    loading="lazy"
                   />
                 </CardItem>
 

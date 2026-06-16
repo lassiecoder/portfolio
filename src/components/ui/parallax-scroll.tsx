@@ -55,7 +55,7 @@ export const ParallaxScroll = ({
                   width="200"
                   alt="networking"
                   layout="intrinsic"
-                  priority
+                  loading="lazy"
                 />
               </Link>
             </motion.div>
@@ -72,7 +72,7 @@ export const ParallaxScroll = ({
                   width="200"
                   alt="networking"
                   layout="intrinsic"
-                  priority
+                  loading="lazy"
                 />
               </Link>
             </motion.div>
@@ -89,7 +89,7 @@ export const ParallaxScroll = ({
                   width="200"
                   alt="networking"
                   layout="intrinsic"
-                  priority
+                  loading="lazy"
                 />
               </Link>
             </motion.div>
@@ -106,7 +106,7 @@ export const ParallaxScroll = ({
                   width="200"
                   alt="networking"
                   layout="intrinsic"
-                  priority
+                  loading="lazy"
                 />
               </Link>
             </motion.div>
@@ -123,7 +123,7 @@ export const ParallaxScroll = ({
                   width="200"
                   alt="networking"
                   layout="intrinsic"
-                  priority
+                  loading="lazy"
                 />
               </Link>
             </motion.div>

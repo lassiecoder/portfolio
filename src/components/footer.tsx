@@ -7,7 +7,8 @@ import {
   FaGithub,
   FaLinkedinIn,
   FaInstagram,
-  FaMailBulk
+  FaMailBulk,
+  FaYoutube,
 } from "react-icons/fa";
 import Link from "next/link";
 import { HiMiniBellAlert } from "react-icons/hi2";
@@ -16,7 +17,7 @@ export default function Footer() {
   const trackSponsorClick = () => {
     ReactGA.event("sponsorship_click_header", {
       category: "Sponsorship",
-      label: "GitHub Sponsor Button"
+      label: "GitHub Sponsor Button",
     });
   };
 
@@ -38,6 +39,7 @@ export default function Footer() {
               width={100}
               height={10}
               style={{ width: "100%", height: "auto" }}
+              loading="lazy"
             />
           </Link>
 
@@ -68,13 +70,13 @@ export default function Footer() {
             icon={FaGithub}
             label="GitHub"
           />
-          <SocialLink
+          {/* <SocialLink
             href="https://www.linkedin.com/in/priyanka-s-b79401142/"
             icon={FaLinkedinIn}
             label="LinkedIn"
-          />
+          /> */}
           <SocialLink
-            href="https://techscoop.hashnode.dev"
+            href="https://medium.com/@lassiecoder"
             icon={IoNewspaperOutline}
             label="Newsletter"
           />
@@ -89,10 +91,15 @@ export default function Footer() {
             label="Instagram"
           />
           <SocialLink
+            href="https://www.youtube.com/@lassiecoder"
+            icon={FaYoutube}
+            label="YouTube"
+          />
+          {/* <SocialLink
             href="mailto:lassiecoder@gmail.com"
             icon={FaMailBulk}
             label="Mail"
-          />
+          /> */}
         </div>
       </div>
     </div>

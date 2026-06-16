@@ -98,6 +98,7 @@ const links = [
         width={20}
         height={20}
         alt="Aceternity Logo"
+        loading="lazy"
       />
     ),
     href: "#",
