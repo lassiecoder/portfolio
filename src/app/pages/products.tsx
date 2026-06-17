@@ -80,7 +80,7 @@ const products = [
     tagline: "Smart Google Ads Intelligence",
     description:
       "Built in 48 hours. Finds exactly how much of a Google Ads budget is being wasted, gives a Waste Score out of 100, plain-English fixes, and a negative keyword list in 60 seconds. No agency. No jargon.",
-    href: "https://adsiftly.com",
+    href: "https://adsiftly.com?utm_source=portfolio&utm_medium=referral&utm_campaign=launch",
     status: "Google Ads API · Under Review",
     icon: (
       <Image
