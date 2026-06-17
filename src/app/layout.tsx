@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Montserrat } from "next/font/google";
 import "./globals.css";
 import {} from "next/font/google";
+import Navbar from "@/components/navbar";
 
 export const metadata: Metadata = {
   title:
@@ -23,7 +24,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className={`${montserrat.variable} dark`}>
-      <body className={`${montserrat.className} bg-black`}>{children}</body>
+      <body className={`${montserrat.className} bg-black`}>
+        <Navbar />
+        <div className="pt-14">{children}</div>
+      </body>
     </html>
   );
 }

@@ -8,7 +8,7 @@ const Networking = () => {
   const words = ["Connecting, Learning, and Growing Together"];
 
   return (
-    <div className="max-w-7xl mx-auto px-4 mt-10">
+    <div className="max-w-7xl mx-auto px-4 mt-10 mt-36">
       <h2 className="md:text-4xl text-2xl lg:text-4xl font-bold text-left pb-12 xl:pl-0 lg:mb-0 sm:mb-0 relative z-10 w-[100%]">
         <div className="subtitle-box">
           <FlipWords words={words} duration={1000} />

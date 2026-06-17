@@ -21,7 +21,7 @@ const ThreeDCard = () => {
         const repoData = await Promise.all(
           dummyData.map(async (item) => {
             const response = await fetch(
-              `https://api.github.com/repos/${GITHUB_USERNAME}/${item.repo}`
+              `https://api.github.com/repos/${GITHUB_USERNAME}/${item.repo}`,
             );
             const data = await response.json();
             return {
@@ -29,7 +29,7 @@ const ThreeDCard = () => {
               stars: data.stargazers_count,
               forks: data.forks_count,
             };
-          })
+          }),
         );
 
         const stats = repoData.reduce(
@@ -37,7 +37,7 @@ const ThreeDCard = () => {
             acc[curr.repo] = { stars: curr.stars, forks: curr.forks };
             return acc;
           },
-          {}
+          {},
         );
 
         setRepoStats(stats);

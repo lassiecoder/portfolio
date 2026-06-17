@@ -14,7 +14,7 @@ export function Article() {
   };
 
   return (
-    <div className="max-w-7xl mx-auto px-4 mt-32 pb-20 overflow-hidden font-medium">
+    <div className="max-w-7xl mx-auto px-4 mt-20 pb-20 overflow-hidden font-medium">
       <div className="px-4">
         <h2 className="md:text-4xl text-2xl lg:text-4xl font-bold text-left xl:pl-0 lg:mb-0 lg:pl-5 sm:mb-0 sm:pl-2 text-white">
           Articles
@@ -40,7 +40,7 @@ export function Article() {
       </div>
       <Link
         onClick={trackReadMoreClick}
-        href={"https://techscoop.hashnode.dev"}
+        href={"https://medium.com/@lassiecoder"}
         target="_blank"
         className="flex justify-end items-center gap-1 w-full text-gray-300 hover:text-blue-400 transition-colors duration-300"
       >
@@ -60,69 +60,49 @@ const pinData = [
     heading:
       "Stitch by Google — A new era for designing UIs faster and smarter",
     description:
-      "Stitch is an experimental AI tool from Google that bridges design and development by letting you design UIs that are backed by real, working code from the start.",
+      "Stitch is an experimental AI tool from Google that bridges design and development by letting you design UIs that are backed by real, working code from...",
+  },
+  {
+    techstack: "@medium/lassiecoder",
+    href: "https://medium.com/design-bootcamp/claude-fable-5-is-here-and-it-changes-everything-about-what-ai-can-actually-do-1f7d31b24b1b",
+    heading: "Claude Fable 5 changes everything about what AI can actually do",
+    description:
+      "Anthropic launched its most capable model ever for general use. Here’s the deep technical breakdown of what makes it different, how the safeguards...",
+  },
+  {
+    techstack: "@medium/lassiecoder",
+    href: "https://medium.com/design-bootcamp/the-day-the-u-s-government-killed-anthropics-most-powerful-ai-d580651c1c8f",
+    heading: "The day the U.S. Government killed Anthropic’s most Powerful AI",
+    description:
+      "Claude Fable 5 lasted five days in the wild. Here’s the full technical and political breakdown of the most dramatic AI shutdown in history...",
+  },
+  {
+    techstack: "@medium/lassiecoder",
+    href: "https://medium.com/gitconnected/your-browser-is-now-an-ai-no-api-key-required-3f813e902f51",
+    heading: "Your browser is now an AI (No API key required)",
+    description:
+      "There’s a quiet shift happening in how AI gets delivered to users. While most developers are still wiring up cloud API calls, billing for tokens...",
+  },
+  {
+    techstack: "@medium/lassiecoder",
+    href: "https://medium.com/ai-advances/cursor-composer-2-5-the-ai-coding-agent-that-punches-way-above-its-price-tag-ce1e9c07e6f2",
+    heading:
+      "Cursor Composer 2.5: The AI coding agent that punches way above it’s price tag",
+    description:
+      "How Cursor’s latest model matches frontier AI on coding benchmarks, at one-tenth the cost, and what’s really powering it under the hood...",
   },
   {
     techstack: "@medium/lassiecoder",
     href: "https://techscoop.hashnode.dev/gemini-ai-in-chrome-devtools",
     heading: "Automating your social media with n8n",
     description:
-      "Managing multiple social media accounts can quickly turn into a full-time job. From posting updates to responding to messages, the repetitive tasks eat into time you could spend on creating valuable content.",
+      "Managing multiple social media accounts can quickly turn into a full-time job. From posting updates to responding to messages, the repetitive tasks into...",
   },
   {
     techstack: "@techscoop/lassiecoder",
     href: "https://techscoop.hashnode.dev/gemini-ai-in-chrome-devtools",
     heading: "Gemini AI in Chrome DevTools",
     description:
-      "Google integrates Gemini AI into Chrome DevTools, offering AI-powered debugging, code optimization, security insights, and accessibility improvements for developers.",
-  },
-  {
-    techstack: "@techscoop/lassiecoder",
-    href: "https://techscoop.hashnode.dev/using-deepseek-r1-for-free-in-visual-studio-code",
-    heading: "Using DeepSeek R1 for Free in VSCode",
-    description:
-      "DeepSeek R1 - an open-source AI tool for code generation, seamlessly integrating with VSCode to enhance developer productivity and workflow efficiency.",
-  },
-  {
-    techstack: "@medium.com/lassiecoder",
-    href: "https://medium.com/nerd-for-tech/how-to-become-an-open-source-contributor-c07acbc8e9ca",
-    heading: "How to Become an Open-Source Contributor",
-    description:
-      "If you’re looking to become an open-source contributor, this guide will walk you through everything you need to know to get started, from finding projects to making your first contribution.",
-  },
-  {
-    techstack: "@medium.com/lassiecoder",
-    href: "https://medium.com/@sharmapriyanka84510/commit-guidelines-f41b23f0bf4a",
-    heading: "Git Commit Guidelines",
-    description:
-      "A comprehensive guide to crafting clear and meaningful Git commit messages, enhancing collaboration, maintainability, and understanding throughout the development process for future contributors.",
-  },
-  {
-    techstack: "@medium.com/lassiecoder",
-    href: "https://sharmapriyanka84510.medium.com/navigating-the-upgrade-odyssey-a-journey-through-react-native-project-upgrades-and-helpful-tools-1b4384dc7f6d",
-    heading: "Navigating React Native Project Upgrades: A Journey & Tools.",
-    description:
-      "Upgrade React Native projects effortlessly using tools like Renovate, React Native CLI, npm-check-updates, Dependabot, and react-native-template-upgrade.",
-  },
-  {
-    techstack: "@medium.com/lassiecoder",
-    href: "https://medium.com/nerd-for-tech/fastlane-with-react-native-part-2-a1adea3321aa",
-    heading: "Fastlane with React Native — Part-2",
-    description:
-      "Discover Fastlane's efficiency in Android app deployment, transitioning from manual to automated processes, enhancing workflow with its robust automation features.",
-  },
-  {
-    techstack: "@medium.com/lassiecoder",
-    href: "https://sharmapriyanka84510.medium.com/fastlane-with-react-native-part-1-ac916d99cb83",
-    heading: "Fastlane with React Native — Part-1",
-    description:
-      "Fastlane optimizes iOS app development, automating build increments and metadata uploads, enhancing deployment efficiency with streamlined processes.",
-  },
-  {
-    techstack: "@medium.com/lassiecoder",
-    href: "https://medium.com/swlh/javascript-array-mutability-immutability-93d366c90751",
-    heading: "JavaScript: Array, mutability & immutability",
-    description:
-      "JavaScript array methods explained briefly: length, map, immutable code, push/pop, delete/splice, filter, shift/unshift, reduce, and reduceRight.",
+      "Google integrates Gemini AI into Chrome DevTools, offering AI-powered debugging, code optimization, security insights, and accessibility improvements for...",
   },
 ];

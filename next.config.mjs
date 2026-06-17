@@ -6,7 +6,8 @@ const nextConfig = {
     domains: [
       "github.com",
       "user-images.githubusercontent.com",
-      "assets.aceternity.com"
+      "assets.aceternity.com",
+      "i.ytimg.com"
     ],
     remotePatterns: [
       {

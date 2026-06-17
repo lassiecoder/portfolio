@@ -43,7 +43,7 @@ export function Experience() {
       content: (
         <div className="max-w-4xl mx-auto">
           <div>
-            <h1 className="text-3xl text-white mb-6">
+            <h1 className="text-3xl text-white mb-6 ">
               <p className="font-bold flex text-xl md:text-xl lg:text-2xl">
                 SDE2
               </p>
@@ -365,7 +365,7 @@ export function Experience() {
   ];
   return (
     <div className="max-w-7xl mx-auto px-4 mt-20 ">
-      <div className="px-4">
+      <div className="px-4 md:mt-36">
         <h2 className="md:text-4xl text-2xl lg:text-4xl font-bold text-left pb-12 xl:pl-0 lg:mb-0 sm:mb-0 text-white">
           Experience
         </h2>
