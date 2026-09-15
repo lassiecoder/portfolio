@@ -3,12 +3,58 @@
 import React, { useEffect, useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
+import { AnimatePresence, motion } from "framer-motion";
 import { FaStar } from "react-icons/fa6";
 import { PiGitForkBold } from "react-icons/pi";
 import { ButtonsCard } from "@/components/ui/tailwindcss-buttons";
 import { CardBody, CardContainer, CardItem } from "@/components/ui/3d-card.tsx";
 
 const GITHUB_USERNAME = "lassiecoder";
+const IMAGE_SWITCH_INTERVAL_MS = 3000;
+
+const PLATFORM_STYLES: { [key: string]: string } = {
+  "Mobile App": "bg-blue-500/10 text-blue-300 border-blue-400/30",
+  "Web App": "bg-emerald-500/10 text-emerald-300 border-emerald-400/30",
+  Tool: "bg-gray-500/10 text-gray-300 border-gray-400/30",
+};
+
+const ProjectImage = ({ images }: { images: string[] }) => {
+  const [activeIndex, setActiveIndex] = useState(0);
+
+  useEffect(() => {
+    if (images.length < 2) return;
+
+    const interval = setInterval(() => {
+      setActiveIndex((prev) => (prev + 1) % images.length);
+    }, IMAGE_SWITCH_INTERVAL_MS);
+
+    return () => clearInterval(interval);
+  }, [images]);
+
+  return (
+    <div className="relative h-40 sm:h-44 md:h-48 w-full overflow-hidden rounded-xl group-hover/card:shadow-xl">
+      <AnimatePresence mode="wait">
+        <motion.div
+          key={images[activeIndex]}
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          exit={{ opacity: 0 }}
+          transition={{ duration: 0.6 }}
+          className="absolute inset-0"
+        >
+          <Image
+            src={images[activeIndex]}
+            height={1000}
+            width={1000}
+            className="h-full w-full object-cover"
+            alt="thumbnail"
+            loading="lazy"
+          />
+        </motion.div>
+      </AnimatePresence>
+    </div>
+  );
+};
 
 const ThreeDCard = () => {
   const [repoStats, setRepoStats] = useState<{
@@ -69,6 +115,14 @@ const ThreeDCard = () => {
                   {item.title}
                 </CardItem>
 
+                {/* Platform Tag */}
+                <CardItem
+                  translateZ="40"
+                  className={`inline-block w-fit text-xs font-medium px-2.5 py-1 rounded-full border mt-2 ${PLATFORM_STYLES[item.platform]}`}
+                >
+                  {item.platform}
+                </CardItem>
+
                 {/* Description with Clamp */}
                 <CardItem
                   as="p"
@@ -80,13 +134,10 @@ const ThreeDCard = () => {
 
                 {/* Image with Fixed Height */}
                 <CardItem translateZ="100" className="w-full mt-4">
-                  <Image
-                    src={item.image}
-                    height={1000}
-                    width={1000}
-                    className="h-40 sm:h-44 md:h-48 w-full object-cover rounded-xl group-hover/card:shadow-xl"
-                    alt="thumbnail"
-                    loading="lazy"
+                  <ProjectImage
+                    images={
+                      Array.isArray(item.image) ? item.image : [item.image]
+                    }
                   />
                 </CardItem>
 
@@ -134,6 +185,26 @@ export default ThreeDCard;
 
 const dummyData = [
   {
+    title: "Traya – Hair assessment app",
+    description:
+      "A React Native app that walks a user through a signup, an 11-question hair-loss assessment, and a generated report/plan with a mini product checkout.",
+    image: ["/traya-1.png", "/traya-2.png"],
+    link: "https://github.com/lassiecoder/traya-hair-test",
+    repo: "traya-hair-test",
+    projectType: "Personal Project",
+    platform: "Mobile App",
+  },
+  {
+    title: "Wayk – An alarm app",
+    description:
+      "An alarm app that doesn't let you snooze your way back to sleep. You pick a wake time, a 'mission' you have to complete before the alarm will actually stop.",
+    image: ["/wayk-1.png", "/wayk-2.png"],
+    link: "https://github.com/lassiecoder/wayk",
+    repo: "wayk",
+    projectType: "Personal Project",
+    platform: "Mobile App",
+  },
+  {
     title: "Enterprise Dashboard",
     description:
       "A modern enterprise dashboard with analytics, eCommerce management, and interactive data visualizations.",
@@ -141,69 +212,17 @@ const dummyData = [
     link: "https://github.com/lassiecoder/enterprise-dashboard",
     repo: "enterprise-dashboard",
     projectType: "",
-  },
-  {
-    title: "Community Health Files",
-    description:
-      "The community-health-files package automates the setup and management  for open-source projects, providing a streamlined way to maintain project guidelines and policies.",
-    image: "/project-1.png",
-    link: "https://github.com/lassiecoder/community-health-files",
-    repo: "community-health-files",
-    projectType: "",
-  },
-  {
-    title: "GitHub README",
-    description:
-      "A dynamic GitHub profile showcasing JavaScript expertise, tech writing, speaking, and community contributions with engaging visuals, stats, and social links.",
-    image: "/project-2.png",
-    link: "https://github.com/lassiecoder/lassiecoder",
-    repo: "lassiecoder",
-    projectType: "",
-  },
-  {
-    title: "Shoplane – E-commerce website",
-    description:
-      "Shoplane's GitHub repository, with 340 stars and 250 forks, is a significant player in open-source e-commerce, influencing the online retail sector's development.",
-    image: "/project-3.png",
-    link: "https://github.com/lassiecoder/E-CommerceWebsite",
-    repo: "E-CommerceWebsite",
-    projectType: "",
-  },
-  {
-    title: "npx lassiecoder – in your terminal?",
-    description:
-      "A personalized command-line business card. This innovative tool allows you to showcase your professional profile, skills, and contact information in the terminal.",
-    image: "/project-4.gif",
-    link: "https://github.com/lassiecoder/npx-lassiecoder",
-    repo: "npx-lassiecoder",
-    projectType: "",
+    platform: "Web App",
   },
   {
     title: "EduFund - Mutual Funds & SIP",
     description:
       "EduFund, India's leading investment app, helps parents save for their children's education, ensuring a brighter future amid rising education expenses.",
     image: "/project-5.png",
-    link: "https://play.google.com/store/apps/details?id=com.educationfund.edufund",
+    link: "https://play.google.com/store/apps/details?id=com.educationfund.edufund&hl=en_IN",
     repo: "",
     projectType: "work-project",
-  },
-  {
-    title: "Torum: Cryptocurrency Social App",
-    description:
-      "Torum's mobile app fosters a vibrant SocialFi ecosystem, connecting over 230,000 cryptocurrency enthusiasts since its 2018 inception.",
-    image: "/project-6.png",
-    link: "https://play.google.com/store/apps/details?id=com.torum.app&amp;hl=en_IN&amp;gl=US",
-    repo: "",
-    projectType: "work-project",
-  },
-  {
-    title: "Mutual funding app",
-    description:
-      "The proof-of-concept app exhibits mutual funds with authentication, presenting a scrollable list of key fund information. Selecting a fund directs users to a detailed product page for additional insights.",
-    image: "/project-7.png",
-    link: "https://github.com/lassiecoder/mutual-funding-app",
-    repo: "mutual-funding-app",
-    projectType: "",
+    platform: "Mobile App",
   },
   {
     title: "Adecco",
@@ -213,5 +232,66 @@ const dummyData = [
     link: "https://play.google.com/store/apps/details?id=com.adecco.app20&amp;hl=en_IN&amp;gl=US",
     repo: "",
     projectType: "work-project",
+    platform: "Mobile App",
+  },
+  {
+    title: "Community Health Files",
+    description:
+      "The community-health-files package automates the setup and management  for open-source projects, providing a streamlined way to maintain project guidelines and policies.",
+    image: "/project-1.png",
+    link: "https://github.com/lassiecoder/community-health-files",
+    repo: "community-health-files",
+    projectType: "",
+    platform: "Tool",
+  },
+  {
+    title: "GitHub README",
+    description:
+      "A dynamic GitHub profile showcasing JavaScript expertise, tech writing, speaking, and community contributions with engaging visuals, stats, and social links.",
+    image: "/project-2.png",
+    link: "https://github.com/lassiecoder/lassiecoder",
+    repo: "lassiecoder",
+    projectType: "",
+    platform: "Tool",
+  },
+  {
+    title: "npx lassiecoder – in your terminal?",
+    description:
+      "A personalized command-line business card. This innovative tool allows you to showcase your professional profile, skills, and contact information in the terminal.",
+    image: "/project-4.gif",
+    link: "https://github.com/lassiecoder/npx-lassiecoder",
+    repo: "npx-lassiecoder",
+    projectType: "",
+    platform: "Tool",
+  },
+  {
+    title: "Torum: Cryptocurrency Social App",
+    description:
+      "Torum's mobile app fosters a vibrant SocialFi ecosystem, connecting over 230,000 cryptocurrency enthusiasts since its 2018 inception.",
+    image: "/project-6.png",
+    link: "https://www.pay.torum.com/",
+    repo: "",
+    projectType: "work-project",
+    platform: "Mobile & Web App",
+  },
+  {
+    title: "Shoplane – E-commerce website",
+    description:
+      "Shoplane's GitHub repository, with 340 stars and 250 forks, is a significant player in open-source e-commerce, influencing the online retail sector's development.",
+    image: "/project-3.png",
+    link: "https://github.com/lassiecoder/E-CommerceWebsite",
+    repo: "E-CommerceWebsite",
+    projectType: "",
+    platform: "Web App",
+  },
+  {
+    title: "Mutual funding app",
+    description:
+      "The proof-of-concept app exhibits mutual funds with authentication, presenting a scrollable list of key fund information. Selecting a fund directs users to a detailed product page for additional insights.",
+    image: "/project-7.png",
+    link: "https://github.com/lassiecoder/mutual-funding-app",
+    repo: "mutual-funding-app",
+    projectType: "",
+    platform: "Mobile App",
   },
 ];
