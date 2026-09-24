@@ -8,6 +8,7 @@ import { FaStar } from "react-icons/fa6";
 import { PiGitForkBold } from "react-icons/pi";
 import { ButtonsCard } from "@/components/ui/tailwindcss-buttons";
 import { CardBody, CardContainer, CardItem } from "@/components/ui/3d-card.tsx";
+import { withBasePath } from "@/lib/basePath";
 
 const GITHUB_USERNAME = "lassiecoder";
 const IMAGE_SWITCH_INTERVAL_MS = 3000;
@@ -43,7 +44,7 @@ const ProjectImage = ({ images }: { images: string[] }) => {
           className="absolute inset-0"
         >
           <Image
-            src={images[activeIndex]}
+            src={withBasePath(images[activeIndex])}
             height={1000}
             width={1000}
             className="h-full w-full object-cover"

@@ -5,6 +5,7 @@ import Image from "next/image";
 import ReactGA from "react-ga4";
 import { SiReaddotcv } from "react-icons/si";
 import { PinContainer } from "@/components/ui/3d-pin";
+import { withBasePath } from "@/lib/basePath";
 
 export function Article() {
   const trackReadMoreClick = () => {
@@ -32,7 +33,7 @@ export function Article() {
                   {item.image && (
                     <div className="relative w-full h-20 lg:h-24 mb-2 overflow-hidden rounded-lg shrink-0">
                       <Image
-                        src={item.image}
+                        src={withBasePath(item.image)}
                         alt={item.heading}
                         fill
                         className="object-cover"
