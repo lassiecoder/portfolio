@@ -12,6 +12,7 @@ import {
 } from "react-icons/fa";
 import Link from "next/link";
 import { HiMiniBellAlert } from "react-icons/hi2";
+import { withBasePath } from "@/lib/basePath";
 
 export default function Footer() {
   const trackSponsorClick = () => {
@@ -33,7 +34,7 @@ export default function Footer() {
             onClick={trackSponsorClick}
           >
             <Image
-              src="/sponsor-icon.png"
+              src={withBasePath("/sponsor-icon.png")}
               alt="Sponsor lassiecoder on GitHub"
               className="h-8 w-auto rounded-lg"
               width={100}

@@ -16,7 +16,10 @@ import Networking from "./pages/networking";
 
 export default function Home() {
   useEffect(() => {
-    ReactGA.initialize(process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID!);
+    const gaMeasurementId = process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID;
+    if (gaMeasurementId) {
+      ReactGA.initialize(gaMeasurementId);
+    }
   }, []);
 
   return (

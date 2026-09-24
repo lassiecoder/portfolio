@@ -5,6 +5,7 @@ import Link from "next/link";
 import Image from "next/image";
 import ReactGA from "react-ga4";
 import { FlipWords } from "../../components/ui/flip-words";
+import { withBasePath } from "@/lib/basePath";
 
 const ContactForm = () => {
   const words = ["Networking", "Collaboration", "Suggestions"];
@@ -75,7 +76,7 @@ const ContactForm = () => {
         onClick={trackSponsorClick}
       >
         <Image
-          src="/sponsor-icon.png"
+          src={withBasePath("/sponsor-icon.png")}
           alt="Sponsor lassiecoder on GitHub"
           className="h-8 w-auto rounded-lg"
           width={100}

@@ -54,6 +54,12 @@ jobs:
         run: ${{ steps.detect-package-manager.outputs.manager }} ${{ steps.detect-package-manager.outputs.command }}
 
       - name: Build with Next.js
+        env:
+          # Google Analytics measurement IDs are not secret (they're
+          # embedded in the client bundle and visible in any page's network
+          # requests), so it's safe to set this directly here. Vercel gets
+          # the same value from its own project env vars.
+          NEXT_PUBLIC_GA_MEASUREMENT_ID: G-PYQ50G2GWN
         run: ${{ steps.detect-package-manager.outputs.runner }} next build
 
       - name: Upload artifact

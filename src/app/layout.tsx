@@ -3,12 +3,16 @@ import { Montserrat } from "next/font/google";
 import "./globals.css";
 import {} from "next/font/google";
 import Navbar from "@/components/navbar";
+import { withBasePath } from "@/lib/basePath";
 
 export const metadata: Metadata = {
   title:
     "Portfolio | Priyanka Sharma (lassiecoder) | Mobile & Web app developer",
   description:
     "Crafting compelling narratives through design, merging creativity with functionality seamlessly.",
+  icons: {
+    icon: withBasePath("/favicon.ico"),
+  },
 };
 
 const montserrat = Montserrat({

@@ -15,6 +15,11 @@ const nextConfig = {
   output: "export",
   basePath,
   assetPrefix: basePath ? `${basePath}/` : "",
+  // Exposed to client code (see src/lib/basePath.ts) because next/image with
+  // images.unoptimized doesn't auto-prefix raw string `src`s with basePath.
+  env: {
+    NEXT_PUBLIC_BASE_PATH: basePath,
+  },
   images: {
     unoptimized: true,
     domains: [

@@ -7,8 +7,12 @@ import { TbExternalLink } from "react-icons/tb";
 
 import { HiMiniBellAlert } from "react-icons/hi2";
 import { IoGitNetworkOutline } from "react-icons/io5";
+import { withBasePath } from "@/lib/basePath";
 
-const GIF_SRCS = ["/adsiftly-home-preview.gif", "/adsiftly-report.gif"];
+const GIF_SRCS = [
+  withBasePath("/adsiftly-home-preview.gif"),
+  withBasePath("/adsiftly-report.gif"),
+];
 const INTERVAL_MS = 4000;
 
 function GifSlider() {
@@ -84,7 +88,7 @@ const products = [
     status: "Google Ads API · Under Review",
     icon: (
       <Image
-        src="/adsiftly-logo.png"
+        src={withBasePath("/adsiftly-logo.png")}
         alt="Adsiftly"
         width={32}
         height={32}
