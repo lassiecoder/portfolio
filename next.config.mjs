@@ -1,6 +1,20 @@
 /** @type {import('next').NextConfig} */
+
+// GitHub Pages serves this site from https://lassiecoder.github.io/portfolio/
+// (a subpath), while Vercel serves it from https://lassiecoder.com/ (the
+// domain root). GITHUB_ACTIONS is only set to "true" by GitHub's runners, so
+// this keeps the Vercel build untouched and only prefixes GitHub Pages builds.
+const isGithubActions = process.env.GITHUB_ACTIONS === "true";
+const repo = process.env.GITHUB_REPOSITORY
+  ? process.env.GITHUB_REPOSITORY.replace(/.*?\//, "")
+  : "portfolio";
+
+const basePath = isGithubActions ? `/${repo}` : "";
+
 const nextConfig = {
   output: "export",
+  basePath,
+  assetPrefix: basePath ? `${basePath}/` : "",
   images: {
     unoptimized: true,
     domains: [
