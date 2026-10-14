@@ -186,6 +186,20 @@ export default ThreeDCard;
 
 const dummyData = [
   {
+    title: "RN Build Doctor – CLI",
+    description:
+      "Open-source CLI that finds the real reason a React Native or Expo build, release, or startup failed, with the evidence and next steps. 40 checks across Gradle, Xcode, CocoaPods, Metro, and device logs. Runs offline: npx rn-build-doctor",
+    image: [
+      "/rn-build-doctor-1.png",
+      "/rn-build-doctor-2.png",
+      "/rn-build-doctor-3.png",
+    ],
+    link: "https://github.com/lassiecoder/rn-build-doctor",
+    repo: "rn-build-doctor",
+    projectType: "Personal Project",
+    platform: "Tool",
+  },
+  {
     title: "Traya – Hair assessment app",
     description:
       "A React Native app that walks a user through a signup, an 11-question hair-loss assessment, and a generated report/plan with a mini product checkout.",
